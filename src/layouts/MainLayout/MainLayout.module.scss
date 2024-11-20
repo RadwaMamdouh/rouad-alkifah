@@ -1,0 +1,11 @@
+@use "assets/scss/vars.scss" as *;
+
+.main_layout {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	.outer_content {
+		flex-grow: 1;
+	}
+}

@@ -1,0 +1,38 @@
+@use "assets/scss/vars.scss" as *;
+
+.lang_btn {
+	padding: 8px;
+	background-color: var(--white);
+	border: 0;
+	color: var(--black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	@include borderRadius(4px);
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	box-shadow: none;
+	@include transition(0.3s);
+
+	svg {
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+	}
+
+	span {
+		@include font(16px, 500, var(--black));
+		@include transition(0.3s);
+	}
+
+	&:hover {
+		background-color: var(--bg-light);
+		color: var(--primary);
+
+		span {
+			color: var(--primary);
+		}
+	}
+}

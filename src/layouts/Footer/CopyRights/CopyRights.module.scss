@@ -1,0 +1,15 @@
+@use "assets/scss/vars.scss" as *;
+
+.copyRights {
+	padding: 16px 0;
+	background-color: var(--black);
+	border-top: 1px solid var(--bg-dark85);
+
+	p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		@include font(14px, 400, var(--white));
+	}
+}

@@ -1,0 +1,146 @@
+@use "assets/scss/vars.scss" as *;
+
+.app_footer {
+	padding: 24px 0;
+	background-color: var(--black);
+
+	.footer_content {
+		position: relative;
+		overflow: hidden;
+
+		.footer_frame {
+			position: absolute;
+			width: 242px;
+			bottom: -50px;
+			#{$ltr} & {
+				left: 0;
+				@include transform(rotate(30deg));
+			}
+			#{$rtl} & {
+				right: 0;
+				@include transform(rotate(-30deg));
+			}
+		}
+
+		.logo_col {
+			@media (max-width: 991.98px) {
+				order: 1;
+			}
+		}
+
+		.footer_logo {
+			display: block;
+			width: 221px;
+			max-width: 100%;
+
+			@media (max-width: 991.98px) {
+				margin: 0 auto;
+			}
+		}
+
+		.footer_col {
+			&:not(:last-child) {
+				margin-bottom: 22px;
+			}
+
+			h5 {
+				padding: 8px 0;
+				border-bottom: 1px solid var(--secondary);
+				@include font(16px, 700, var(--white));
+				margin-bottom: 8px;
+			}
+
+			ul {
+				li {
+					&:not(:last-child) {
+						margin-bottom: 2px;
+					}
+
+					a {
+						display: block;
+						padding: 4px 0;
+						@include font(16px, 500, var(--white));
+						width: -webkit-fit-content;
+						width: -moz-fit-content;
+						width: fit-content;
+						@include transition(0.3s);
+
+						&:hover {
+							text-decoration: underline !important;
+						}
+					}
+				}
+			}
+
+			.contact {
+				&_row {
+					&:not(:last-child) {
+						margin-bottom: 8px;
+					}
+
+					padding: 4px 0;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 6px;
+
+					svg {
+						flex-shrink: 0;
+						width: 24px;
+						height: 24px;
+					}
+
+					span {
+						@include font(14px, 500, var(--white));
+					}
+				}
+			}
+
+			.work_row {
+				padding: 4px 0;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 6px;
+
+				svg {
+					flex-shrink: 0;
+					width: 24px;
+					height: 24px;
+				}
+
+				span {
+					@include font(14px, 500, var(--white));
+				}
+			}
+
+			.media {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 16px;
+				margin-top: 16px;
+
+				a {
+					flex-shrink: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 32px;
+					height: 32px;
+					@include borderRadius(100%);
+					background-color: var(--primary);
+					@include transition(0.3s);
+
+					img {
+						max-height: 16px;
+					}
+
+					&:hover {
+						background-color: var(--primary-hover);
+					}
+				}
+			}
+		}
+	}
+}

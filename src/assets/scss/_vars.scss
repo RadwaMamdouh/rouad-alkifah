@@ -1,0 +1,207 @@
+// Directions
+$ltr: "[dir='ltr']";
+$rtl: "[dir='rtl']";
+
+// Colors
+$colors: (
+	"primary": #1a75bb,
+	"primary-hover": #155e96,
+	"primary2": #e0eaf2,
+	"secondary": #26a9e1,
+	"dark": #2b2b2b,
+	"text-sub": #697077,
+	"black": #000,
+	"white": #fff,
+	"accent": #e74040,
+
+	// Text
+	"text": #051725,
+	"sub-text": #879096,
+
+	// BG
+	"bg-light": #f4f6fc,
+	"bg-dark85": #082338,
+	"bg-dark8": #003479,
+	"bg-dark7": #104670,
+
+	// Stroke
+	"stroke": #98afc0,
+	"light-gray": #dadada,
+	"dark-gray": #939393,
+);
+
+// Loop through each color in the map and generate CSS variables
+:root {
+	@each $name, $color in $colors {
+		--#{$name}: #{$color};
+	}
+}
+
+// Loop through each color in the map and generate class names
+@each $name, $color in $colors {
+	.#{$name} {
+		color: #{$color} !important;
+	}
+}
+
+@each $name, $color in $colors {
+	.bg_#{$name} {
+		background-color: #{$color};
+	}
+}
+
+// *************** Margin & Padding ******************
+@for $i from 0 through 70 {
+	// Margin Block End
+	.mbe_#{$i} {
+		-webkit-margin-after: #{$i}px !important;
+		margin-block-end: #{$i}px !important;
+	}
+
+	// Margin Block Start
+	.mbs_#{$i} {
+		-webkit-margin-before: #{$i}px !important;
+		margin-block-start: #{$i}px !important;
+	}
+
+	// Margin Inline Start
+	.mis_#{$i} {
+		-webkit-margin-start: #{$i}px !important;
+		margin-inline-start: #{$i}px !important;
+	}
+
+	// Margin Inline End
+	.mie_#{$i} {
+		-webkit-margin-end: #{$i}px !important;
+		margin-inline-end: #{$i}px !important;
+	}
+
+	// Margin Inline
+	.mi_#{$i} {
+		margin-inline: #{$i}px !important;
+	}
+
+	// Margin Block
+	.mb_#{$i} {
+		margin-block: #{$i}px !important;
+	}
+
+	// Padding Block Start
+	.pbs_#{$i} {
+		-webkit-padding-before: #{$i}px;
+		padding-block-start: #{$i}px;
+	}
+
+	// Padding Block End
+	.pbe_#{$i} {
+		-webkit-padding-after: #{$i}px !important;
+		padding-block-end: #{$i}px !important;
+	}
+
+	// Padding Inline Start
+	.pis_#{$i} {
+		-webkit-padding-start: #{$i}px !important;
+		padding-inline-start: #{$i}px !important;
+	}
+
+	// Padding Inline End
+	.pie_#{$i} {
+		-webkit-padding-end: #{$i}px !important;
+		padding-inline-end: #{$i}px !important;
+	}
+
+	// Padding Inline
+	.pi_#{$i} {
+		padding-inline: #{$i}px !important;
+	}
+
+	// Padding Block
+	.pb_#{$i} {
+		padding-block: #{$i}px !important;
+	}
+}
+
+// margin inline Start Auto
+.ms_auto {
+	-webkit-margin-start: auto;
+	margin-inline-start: auto;
+}
+
+// padding inline Start Auto
+.ps_auto {
+	-webkit-padding-start: auto;
+	padding-inline-start: auto;
+}
+
+// Max Width 100%
+.maxWidth_100 {
+	max-width: 100%;
+}
+
+// Height 100%
+.h_100 {
+	height: 100%;
+}
+
+// *************** Padding ******************
+// Padding
+@for $x from 0 through 50 {
+	@for $y from 0 through 50 {
+		.p#{$x}#{$y} {
+			padding: #{$x}px #{$y}px !important;
+		}
+	}
+}
+
+// ******************** Font ******************
+// Font Size
+@for $i from 0 through 50 {
+	.fs_#{$i} {
+		font-size: #{$i}px !important;
+	}
+}
+
+// Font Weight
+@for $i from 1 through 9 {
+	.fw_#{$i * 100} {
+		font-weight: #{$i * 100} !important;
+	}
+}
+
+// ***************** Gap *****************
+@for $i from 1 through 50 {
+	.gap_#{$i} {
+		gap: #{$i}px;
+	}
+}
+
+//********************* Mixins **********************
+@mixin borderRadius($val) {
+	border-radius: $val;
+	-webkit-border-radius: $val;
+	-moz-border-radius: $val;
+	-ms-border-radius: $val;
+	-o-border-radius: $val;
+}
+
+@mixin font($size, $weight, $color) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+@mixin transform($args...) {
+	transform: $args;
+	-webkit-transform: $args;
+	-moz-transform: $args;
+	-ms-transform: $args;
+	-o-transform: $args;
+}
+
+@mixin transition($val) {
+	transition: $val;
+	-webkit-transition: $val;
+	-moz-transition: $val;
+	-ms-transition: $val;
+	-o-transition: $val;
+}

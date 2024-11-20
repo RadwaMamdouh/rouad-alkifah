@@ -1,0 +1,121 @@
+@use "assets/scss/vars.scss" as *;
+
+.news_room {
+	padding: 80px 0;
+	background-color: var(--black);
+	background-image: url(~/public/img/newsRoom-frame.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+
+	@media (max-width: 1024.98px) {
+		padding: 32px 0;
+	}
+
+	.rooms {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 24px;
+		margin-bottom: 32px;
+
+		@media (max-width: 1199.98px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.small_boxes {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 16px 24px;
+			overflow-x: auto;
+
+			&::-webkit-scrollbar {
+				height: 0;
+			}
+		}
+
+		.room_card {
+			position: relative;
+			@include borderRadius(4px);
+			border: 2px solid transparent;
+			overflow: hidden;
+			@include transition(0.3s);
+
+			.img {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+
+				@media (max-width: 575.98px) {
+					height: 252px;
+				}
+
+				img {
+					width: 100%;
+					height: 100%;
+					-o-object-fit: cover;
+					object-fit: cover;
+				}
+			}
+
+			.text {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				padding: 16px;
+				background: #000000cc;
+
+				@media (max-width: 575.98px) {
+					padding: 8px 16px;
+				}
+
+				p {
+					@include font(16px, 500, var(--white));
+					line-height: 24px;
+
+					@media (max-width: 575.98px) {
+						@include font(12px, 400, var(--white));
+					}
+				}
+
+				h5 {
+					@include font(18px, 700, var(--white));
+					line-height: 27px;
+
+					@media (max-width: 575.98px) {
+						@include font(14px, 700, var(--white));
+					}
+				}
+			}
+
+			&.small_card {
+				min-width: 302px;
+
+				.img {
+					@media (max-width: 575.98px) {
+						height: 199px;
+					}
+				}
+
+				.text {
+					p {
+						@include font(12px, 400, var(--white));
+						line-height: 18px;
+					}
+
+					h5 {
+						@include font(14px, 700, var(--white));
+						line-height: 21px;
+					}
+				}
+			}
+
+			&:hover {
+				border-color: var(--accent);
+			}
+		}
+	}
+}

@@ -1,0 +1,235 @@
+@use "assets/scss/vars.scss" as *;
+
+.app_header {
+	position: fixed;
+	background-color: transparent;
+	top: 53px;
+	left: 0;
+	width: 100%;
+	z-index: 3;
+	@include transition(0.3s ease-in-out);
+
+	.header_content {
+		position: relative;
+		-webkit-margin-start: 96px;
+		margin-inline-start: 96px;
+
+		@media (max-width: 1199.98px) {
+			-webkit-margin-start: 75px;
+			margin-inline-start: 75px;
+		}
+
+		.app_logo {
+			position: absolute;
+			top: 0;
+			#{$ltr} & {
+				left: 0;
+				@include transform(translate(-50%, -25%));
+			}
+			#{$rtl} & {
+				right: 0;
+				@include transform(translate(50%, -25%));
+			}
+			width: 193px;
+			height: 193px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@media (max-width: 1199.98px) {
+				width: 150px;
+				height: 150px;
+			}
+
+			.polygon {
+				width: 100%;
+				height: 100%;
+			}
+
+			.logo {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%, -50%));
+				width: 125px;
+				height: 125px;
+				mix-blend-mode: multiply;
+
+				@media (max-width: 1199.98px) {
+					width: 90px;
+					height: 90px;
+				}
+			}
+		}
+
+		.top {
+			padding: 8px 24px;
+			background-color: var(--bg-dark85);
+			border-start-end-radius: 8px;
+			-webkit-padding-start: 100px;
+			padding-inline-start: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 8px;
+
+			@media (max-width: 1199.98px) {
+				padding: 8px 16px;
+				-webkit-padding-start: 80px;
+				padding-inline-start: 80px;
+			}
+
+			.left_info {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 16px;
+
+				.info {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					gap: 8px;
+
+					svg {
+						flex-shrink: 0;
+						max-width: 24px;
+						max-height: 24px;
+
+						@media (max-width: 1199.98px) {
+							width: 20px;
+							height: 20px;
+						}
+					}
+
+					span {
+						@include font(14px, 500, var(--white));
+
+						@media (max-width: 1199.98px) {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+
+			.media {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 8px;
+
+				a {
+					flex-shrink: 0;
+					width: 32px;
+					height: 32px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					@include borderRadius(100%);
+					@include transition(0.3s);
+
+					@media (max-width: 1199.98px) {
+						width: 24px;
+						height: 24px;
+					}
+
+					svg {
+						max-height: 16px;
+					}
+
+					&:hover {
+						background-color: #f4f6fc33;
+					}
+				}
+			}
+		}
+
+		.bottom {
+			padding: 8px 24px;
+			background-color: var(--white);
+			border-end-end-radius: 8px;
+			-webkit-padding-start: 100px;
+			padding-inline-start: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 8px;
+
+			@media (max-width: 1199.98px) {
+				padding: 8px 16px;
+				-webkit-padding-start: 80px;
+				padding-inline-start: 80px;
+			}
+		}
+	}
+
+	.menu_list {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 8px;
+
+		li {
+			flex-shrink: 0;
+
+			a {
+				padding: 8px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include borderRadius(4px);
+				@include font(16px, 500, var(--black));
+				text-align: center;
+				@include transition(0.3s);
+
+				&:hover {
+					background-color: var(--bg-light);
+					@include font(16px, 600, var(--primary));
+				}
+			}
+		}
+	}
+
+	.scrolled_content {
+		display: none;
+	}
+
+	&.scrolled {
+		top: 0;
+		background-color: var(--white);
+		box-shadow: 0px 13px 19px 0px #00000012;
+		padding: 8px 0;
+
+		.header_content {
+			display: none;
+		}
+
+		.scrolled_content {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 8px;
+
+			.left {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 16px;
+
+				.app_logo {
+					flex-shrink: 0;
+					width: 52px;
+					height: 52px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}

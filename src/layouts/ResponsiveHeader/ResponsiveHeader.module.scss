@@ -1,0 +1,108 @@
+@use "assets/scss/vars.scss" as *;
+
+.top {
+	padding: 16px 0;
+	background-color: var(--bg-dark85);
+
+	&_content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 16px;
+
+		.info {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 8px;
+
+			svg {
+				flex-shrink: 0;
+				width: 24px;
+				height: 24px;
+			}
+
+			span {
+				@include font(18px, 500, var(--white));
+			}
+		}
+
+		.media {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 16px;
+
+			a {
+				flex-shrink: 0;
+				width: 32px;
+				height: 32px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include borderRadius(100%);
+				@include transition(0.3s);
+
+				svg {
+					max-height: 16px;
+				}
+
+				&:hover {
+					background-color: #f4f6fc33;
+				}
+			}
+		}
+	}
+}
+
+.bottom {
+	padding: 8px 0;
+	background-color: var(--white);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+
+	&_content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo {
+			flex-shrink: 0;
+			width: 64px;
+			height: 64px;
+		}
+
+		.actions {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+
+			[class*="lang_btn"] {
+				color: var(--primary);
+
+				span {
+					color: var(--primary);
+					font-weight: 700;
+				}
+			}
+
+			.burger_btn {
+				padding: 0;
+				width: 48px;
+				height: 48px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: none;
+				border: 0;
+
+				img {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+}
