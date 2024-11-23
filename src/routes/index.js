@@ -1,17 +1,27 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { withTranslation } from "react-i18next";
+import HomeLayout from "layouts/HomeLayout/HomeLayout";
 import MainLayout from "layouts/MainLayout/MainLayout";
-import { Home } from "pages";
+import { ContactUs, Home } from "pages";
 
 const AppRouter = () => {
 	const router = createBrowserRouter(
 		[
 			{
-				element: <MainLayout />,
+				element: <HomeLayout />,
 				children: [
 					{
 						path: "/",
-						Component: Home,
+						element: <Home />,
+					},
+				],
+			},
+			{
+				element: <MainLayout />,
+				children: [
+					{
+						path: "/contact-us",
+						element: <ContactUs />,
 					},
 				],
 			},

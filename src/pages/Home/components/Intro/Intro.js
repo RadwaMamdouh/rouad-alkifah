@@ -61,7 +61,7 @@ const Intro = () => {
 	];
 
 	return (
-		<div className={styles.intro}>
+		<section className={styles.intro}>
 			{/* Intro Slider */}
 			<div className={styles.intro_slider}>
 				<Swiper
@@ -117,7 +117,7 @@ const Intro = () => {
 				{/* pagination */}
 				<div className="swiper-custom-pagination"></div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

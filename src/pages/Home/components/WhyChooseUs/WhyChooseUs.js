@@ -84,7 +84,7 @@ const WhyChooseUs = () => {
 	];
 
 	return (
-		<div className={styles.why_chooseUs}>
+		<section className={styles.why_chooseUs}>
 			<div className="container">
 				<h2 className="fs_32 fw_700 text-black text-center mbe_4">
 					{Tr.tr("translation:Why_Choose_Us")}
@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

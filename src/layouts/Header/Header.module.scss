@@ -188,7 +188,7 @@
 				&:hover,
 				&:global(.active) {
 					background-color: var(--bg-light);
-					@include font(16px, 600, var(--primary));
+					color: var(--primary);
 				}
 			}
 		}

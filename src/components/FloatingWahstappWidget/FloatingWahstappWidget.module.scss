@@ -1,0 +1,21 @@
+@use "assets/scss/vars.scss" as *;
+
+.whatsapp_widget {
+	position: fixed;
+	width: auto;
+	height: auto;
+
+	:global {
+		.floating-whatsapp-button {
+			width: 64px;
+			height: 64px;
+			border: 2px solid var(--primary2);
+			box-shadow: 0px 13px 19px 0px #00000012;
+
+			#{$rtl} & {
+				left: 2rem;
+				right: auto;
+			}
+		}
+	}
+}

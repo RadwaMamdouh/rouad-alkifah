@@ -5,7 +5,7 @@ import styles from "./NewsRoom.module.scss";
 
 const NewsRoom = () => {
 	return (
-		<div className={styles.news_room}>
+		<section className={styles.news_room}>
 			<div className="container">
 				<div className="mb_32">
 					<h2 className="fs_32 fw_700 white text-center mb_4">Newsroom</h2>
@@ -83,7 +83,7 @@ const NewsRoom = () => {
 					classes="mx-auto"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

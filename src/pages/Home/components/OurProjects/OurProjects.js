@@ -131,7 +131,7 @@ const OurProjects = () => {
 	];
 
 	return (
-		<div className={styles.our_projects}>
+		<section className={styles.our_projects}>
 			<div className="container">
 				<h2 className="fs_32 fw_700 text-black text-center mbe_4">
 					{Tr.tr("translation:Our_Projects")}
@@ -224,7 +224,7 @@ const OurProjects = () => {
 					classes="mx-auto"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -37,7 +37,7 @@ const Statistics = () => {
 	];
 
 	return (
-		<div className={styles.statistics}>
+		<section className={styles.statistics}>
 			<div className="container">
 				<div className={styles.statistics_boxes}>
 					{statistics.map((el, index) => (
@@ -51,7 +51,7 @@ const Statistics = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

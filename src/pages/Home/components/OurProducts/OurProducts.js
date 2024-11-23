@@ -39,7 +39,7 @@ const OurProducts = () => {
 	];
 
 	return (
-		<div className={styles.our_products}>
+		<section className={styles.our_products}>
 			<div className="container">
 				<h2 className="fs_32 fw_700 text-black text-center">
 					{Tr.tr("translation:Our_Products")}
@@ -84,7 +84,7 @@ const OurProducts = () => {
 					classes="mx-auto md_w-100"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

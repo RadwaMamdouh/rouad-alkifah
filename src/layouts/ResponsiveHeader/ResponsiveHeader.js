@@ -19,7 +19,7 @@ const ResponsiveHeader = ({ scrolled }) => {
 
 	const closeHandler = () => {
 		setOpenMenu(false);
-		document.body.style.overflowY = "auto";
+		document.body.style.overflowY = "visible";
 	};
 
 	const closeMenuOnNavigate = () => {

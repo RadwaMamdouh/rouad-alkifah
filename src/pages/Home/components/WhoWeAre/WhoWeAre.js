@@ -16,7 +16,7 @@ const WhoWeAre = () => {
 			: `At <span>Rouad Al-Kafah Factory</span> Company for Industry, we take pride in being pioneers in aluminum manufacturing for windows, doors, and building facades for various types of projects. We stand out with our high-quality custom-designed profiles, specifically engineered to withstand the harshest weather conditions. We guarantee all our products against water, dust, and aluminum discoloration. Additionally, our designs are optimized for energy efficiency, contributing to electricity savings and creating healthier living environments. We are committed to keeping up with technological advancements by using the latest electronically-operated precision machines, accelerating the production of world-class products with excellent quality.`;
 
 	return (
-		<div className={styles.who_weAre}>
+		<section className={styles.who_weAre}>
 			<img src="/img/gradient-bg.svg" alt="" className={styles.float_img} />
 			<div className="container">
 				<div className="row d-flex align-items-center justify-content-between">
@@ -39,7 +39,7 @@ const WhoWeAre = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

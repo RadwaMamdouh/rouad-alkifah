@@ -8,7 +8,7 @@ const Innovation = () => {
 	const currLang = i18n.language;
 
 	return (
-		<div className={styles.innovation}>
+		<section className={styles.innovation}>
 			<div className={styles.img}>
 				<img src="/img/innovation.svg" alt="" />
 			</div>
@@ -37,7 +37,7 @@ const Innovation = () => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

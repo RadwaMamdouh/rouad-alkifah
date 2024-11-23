@@ -36,7 +36,7 @@ const Blogs = () => {
 	];
 
 	return (
-		<div className={styles.blogs}>
+		<section className={styles.blogs}>
 			<div className="container">
 				<div className="mb_32">
 					<h2 className="fs_32 fw_700 black text-center mb_4">Blogs</h2>
@@ -62,7 +62,7 @@ const Blogs = () => {
 					classes="mx-auto"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 };
 

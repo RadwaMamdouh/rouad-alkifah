@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import { Outlet } from "react-router-dom";
-import InnerHeader from "layouts/InnerHeader/InnerHeader";
+import Header from "layouts/Header/Header";
 import ResponsiveHeader from "layouts/ResponsiveHeader/ResponsiveHeader";
 import Footer from "layouts/Footer/Footer";
+import { Outlet } from "react-router-dom";
 
 import FloatingWahstappWidget from "components/FloatingWahstappWidget/FloatingWahstappWidget";
 
 // Styles
-import styles from "./MainLayout.module.scss";
+import styles from "./HomeLayout.module.scss";
 
-const MainLayout = () => {
+const HomeLayout = () => {
 	const [scrolled, setScrolled] = useState(false);
 
 	useEffect(() => {
@@ -27,8 +27,8 @@ const MainLayout = () => {
 
 	return (
 		<>
-			<div className={styles.main_layout}>
-				<InnerHeader />
+			<div className={styles.home_layout}>
+				<Header scrolled={scrolled} />
 				<ResponsiveHeader scrolled={scrolled} />
 
 				<div className={styles.router_content}>
@@ -44,4 +44,4 @@ const MainLayout = () => {
 	);
 };
 
-export default MainLayout;
+export default HomeLayout;
