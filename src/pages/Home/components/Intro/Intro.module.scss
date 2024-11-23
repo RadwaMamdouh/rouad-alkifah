@@ -34,7 +34,7 @@
 	}
 
 	.intro_slide {
-		padding: 217px 15px 58px;
+		padding: 217px 12px 58px;
 		max-width: 55%;
 		margin: 0 auto;
 		position: relative;
@@ -56,6 +56,11 @@
 			text-align: center;
 			line-height: 72px;
 			margin-bottom: 8px;
+
+			@media (max-width: 575.98px) {
+				@include font(36px, 700, var(--white));
+				line-height: 44px;
+			}
 		}
 
 		p {
@@ -63,6 +68,11 @@
 			text-align: center;
 			margin-bottom: 24px;
 			line-height: 36px;
+
+			@media (max-width: 575.98px) {
+				font-size: 20px;
+				line-height: 30px;
+			}
 		}
 	}
 
