@@ -9,7 +9,7 @@ import { Button } from "primereact/button";
 const ResponsiveHeader = () => {
 	return (
 		<>
-			<div className={`${styles.top} d-block d-xl-none`}>
+			<div className={`${styles.top} d-block d-lg-none`}>
 				<div className="container">
 					<div className={styles.top_content}>
 						<div className={styles.info}>
@@ -25,7 +25,7 @@ const ResponsiveHeader = () => {
 					</div>
 				</div>
 			</div>
-			<div className={`${styles.bottom} d-block d-xl-none`}>
+			<div className={`${styles.bottom} d-block d-lg-none`}>
 				<div className="container">
 					<div className={styles.bottom_content}>
 						<img src="/img/logo-small.svg" alt="" className={styles.logo} />
