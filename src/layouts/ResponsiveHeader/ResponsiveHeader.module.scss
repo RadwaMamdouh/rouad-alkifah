@@ -101,8 +101,76 @@
 				img {
 					width: 32px;
 					height: 32px;
+					@include transition(0.3s);
+
+					#{$rtl} & {
+						@include transform(rotateY(180deg));
+					}
 				}
 			}
+
+			.close_menu {
+				padding: 0;
+				width: 48px;
+				height: 48px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: none;
+				border: 0;
+
+				img {
+					width: 32px;
+					height: 32px;
+				}
+			}
+		}
+	}
+}
+
+.menu_list {
+	height: 0;
+	position: fixed;
+	top: 144px;
+	z-index: 9;
+	padding: 16px;
+	background-color: #082338;
+	width: 100%;
+	overflow-y: auto;
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(0.3s);
+
+	li {
+		padding: 16px 8px;
+		border-bottom: 1px solid var(--dark-gray);
+		margin-bottom: 8px;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			@include font(16px, 500, var(--white));
+			@include transition(0.3s);
+
+			&:global(.active) {
+				@include font(16px, 700, var(--secondary));
+			}
+		}
+	}
+
+	&.show {
+		height: calc(100vh - 144px);
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&.scrolled {
+		top: 80px;
+
+		&.show {
+			height: calc(100vh - 80px);
 		}
 	}
 }

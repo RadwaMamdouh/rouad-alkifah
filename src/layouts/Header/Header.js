@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import {
 	clock,
@@ -17,22 +16,7 @@ import { Tr } from "utils/i18n";
 // Styles
 import styles from "./Header.module.scss";
 
-const Header = () => {
-	const [scrolled, setScrolled] = useState(false);
-
-	useEffect(() => {
-		const handleScroll = () => {
-			const scrollTop = window.scrollY;
-			setScrolled(scrollTop > 20); // Add class when scrolled 50px down
-		};
-
-		window.addEventListener("scroll", handleScroll);
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
+const Header = ({ scrolled }) => {
 	return (
 		<header
 			className={`${styles.app_header} ${
