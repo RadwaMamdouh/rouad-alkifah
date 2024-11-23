@@ -18,7 +18,7 @@ const WhoWeAre = () => {
 	return (
 		<section className={styles.who_weAre}>
 			<img src="/img/gradient-bg.svg" alt="" className={styles.float_img} />
-			<div className="container">
+			<div className="container position-relative">
 				<div className="row d-flex align-items-center justify-content-between">
 					<div className="col-md-6 col-xl-7">
 						<h1>{Tr.tr("translation:Who_We_Are")}</h1>
