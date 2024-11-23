@@ -22,6 +22,10 @@ const ResponsiveHeader = ({ scrolled }) => {
 		document.body.style.overflowY = "auto";
 	};
 
+	const closeMenuOnNavigate = () => {
+		setOpenMenu(false);
+	};
+
 	return (
 		<>
 			<div className={`${styles.top} d-block d-lg-none`}>
@@ -75,30 +79,44 @@ const ResponsiveHeader = ({ scrolled }) => {
 					scrolled ? styles.scrolled : ""
 				}`}>
 				<li>
-					<NavLink to="/">{Tr.tr("translation:Home")}</NavLink>
+					<NavLink to="/" onClick={closeMenuOnNavigate}>
+						{Tr.tr("translation:Home")}
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/products">{Tr.tr("translation:Products")}</NavLink>
+					<NavLink to="/products" onClick={closeMenuOnNavigate}>
+						{Tr.tr("translation:Products")}
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/projects">{Tr.tr("translation:Projects")}</NavLink>
+					<NavLink to="/projects" onClick={closeMenuOnNavigate}>
+						{Tr.tr("translation:Projects")}
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/maintenance">
+					<NavLink to="/maintenance" onClick={closeMenuOnNavigate}>
 						{Tr.tr("translation:Maintenance")}
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/news">{Tr.tr("translation:News")}</NavLink>
+					<NavLink to="/news" onClick={closeMenuOnNavigate}>
+						{Tr.tr("translation:News")}
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/blogs">{Tr.tr("translation:Blogs")}</NavLink>
+					<NavLink to="/blogs" onClick={closeMenuOnNavigate}>
+						{Tr.tr("translation:Blogs")}
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/about-us">{Tr.tr("translation:About_Us")}</NavLink>
+					<NavLink to="/about-us" onClick={closeMenuOnNavigate}>
+						{Tr.tr("translation:About_Us")}
+					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/contact-us">{Tr.tr("translation:Contact_Us")}</NavLink>
+					<NavLink to="/contact-us" onClick={closeMenuOnNavigate}>
+						{Tr.tr("translation:Contact_Us")}
+					</NavLink>
 				</li>
 			</div>
 		</>
