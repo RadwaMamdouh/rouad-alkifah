@@ -1,29 +1,38 @@
 import { NumbersFormater } from "utils/NumbersFormater";
 
+import { useTranslation } from "react-i18next";
+
 // Styles
 import styles from "./Statistics.module.scss";
 
 const Statistics = () => {
+	const { i18n } = useTranslation();
+	const currLang = i18n.language;
+
 	const statistics = [
 		{
 			icon: "/img/years-experience.svg",
-			count: 50,
-			title: "Years of Experience",
+			count: 15,
+			titleEn: "Years of Experience",
+			titleAr: "سنة الخبرة",
 		},
 		{
 			icon: "/img/workforce.svg",
 			count: 50,
-			title: "Workforce Size",
+			titleEn: "Workforce Size",
+			titleAr: "القوة العاملة",
 		},
 		{
 			icon: "/img/completed-projects.svg",
-			count: 15000,
-			title: "Completed Projects",
+			count: 3000,
+			titleEn: "Completed Projects",
+			titleAr: "المشاريع المكتملة",
 		},
 		{
 			icon: "/img/happy-clients.svg",
-			count: 80000,
-			title: "Happy Clients",
+			count: 3000,
+			titleEn: "Happy Clients",
+			titleAr: "العملاء السعداء",
 		},
 	];
 
@@ -36,7 +45,7 @@ const Statistics = () => {
 							<img src={el.icon} alt="" />
 							<div>
 								<h3>{NumbersFormater(el.count)}+</h3>
-								<p>{el.title}</p>
+								<p>{currLang === "ar" ? el.titleAr : el.titleEn}</p>
 							</div>
 						</div>
 					))}

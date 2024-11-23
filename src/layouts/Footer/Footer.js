@@ -11,6 +11,8 @@ import {
 } from "icons";
 import CopyRights from "./CopyRights/CopyRights";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import styles from "./Footer.module.scss";
 
@@ -36,7 +38,7 @@ const Footer = () => {
 							</div>
 							<div className="col-12 col-lg-3 mb-4 mb-lg-0 d-block d-lg-none">
 								<div className={styles.footer_col}>
-									<h5>Follow us</h5>
+									<h5>{Tr.tr("translation:Follow_Us")}</h5>
 									<div className={styles.media}>
 										<Link to="#">{facebook}</Link>
 										<Link to="#">{tiktok}</Link>
@@ -47,57 +49,59 @@ const Footer = () => {
 							</div>
 							<div className="col-6 col-lg-2 mb-4 mb-lg-0">
 								<div className={styles.footer_col}>
-									<h5>Home</h5>
+									<h5>{Tr.tr("translation:Home")}</h5>
 									<ul>
 										<li>
-											<Link to="#">Products</Link>
+											<Link to="#">{Tr.tr("translation:Products")}</Link>
 										</li>
 										<li>
-											<Link to="#">Projects</Link>
+											<Link to="#">{Tr.tr("translation:Projects")}</Link>
 										</li>
 										<li>
-											<Link to="#">Maintenance</Link>
+											<Link to="#">{Tr.tr("translation:Maintenance")}</Link>
 										</li>
 										<li>
-											<Link to="#">News</Link>
+											<Link to="#">{Tr.tr("translation:News")}</Link>
 										</li>
 										<li>
-											<Link to="#">Blogs</Link>
+											<Link to="#">{Tr.tr("translation:Blogs")}</Link>
 										</li>
 										<li>
-											<Link to="#">About Us</Link>
+											<Link to="#">{Tr.tr("translation:About_Us")}</Link>
 										</li>
 										<li>
-											<Link to="#">Contact Us</Link>
+											<Link to="#">{Tr.tr("translation:Contact_Us")}</Link>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<div className="col-6 col-lg-2 mb-4 mb-lg-0">
 								<div className={styles.footer_col}>
-									<h5>Our Products</h5>
+									<h5>{Tr.tr("translation:Our_Products")}</h5>
 									<ul>
 										<li>
-											<Link to="#">Doors</Link>
+											<Link to="#">{Tr.tr("translation:Doors")}</Link>
 										</li>
 										<li>
-											<Link to="#">Windows</Link>
+											<Link to="#">{Tr.tr("translation:Windows")}</Link>
 										</li>
 										<li>
-											<Link to="#">Domes</Link>
+											<Link to="#">{Tr.tr("translation:Domes")}</Link>
 										</li>
 										<li>
-											<Link to="#">Building facades</Link>
+											<Link to="#">
+												{Tr.tr("translation:Building_Facades")}
+											</Link>
 										</li>
 										<li>
-											<Link to="#">Accessories</Link>
+											<Link to="#">{Tr.tr("translation:Accessories")}</Link>
 										</li>
 									</ul>
 								</div>
 							</div>
 							<div className="col-12 col-lg-3 mb-4 mb-lg-0 d-block d-lg-none">
 								<div className={styles.footer_col}>
-									<h5>Work Hours</h5>
+									<h5>{Tr.tr("translation:Work_Hours")}</h5>
 									<div className={styles.work_row}>
 										{clock}
 										<span>Saturday to Thursday From 8 AM to 9 PM</span>
@@ -106,7 +110,7 @@ const Footer = () => {
 							</div>
 							<div className="col-12 col-lg-3 mb-4 mb-lg-0">
 								<div className={styles.footer_col}>
-									<h5>Contacts Us</h5>
+									<h5>{Tr.tr("translation:Contact_Us")}</h5>
 									<div className={styles.contact}>
 										<div className={styles.contact_row}>
 											{location}
@@ -118,21 +122,21 @@ const Footer = () => {
 										</div>
 										<div className={styles.contact_row}>
 											{envelop}
-											<span>info@rouad-alkafah.sa</span>
+											<span>info@rouadal-kafah.sa</span>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div className="col-12 col-lg-3 mb-4 mb-lg-0 d-none d-lg-block">
 								<div className={styles.footer_col}>
-									<h5>Work Hours</h5>
+									<h5>{Tr.tr("translation:Work_Hours")}</h5>
 									<div className={styles.work_row}>
 										{clock}
 										<span>Saturday to Thursday From 8 AM to 9 PM</span>
 									</div>
 								</div>
 								<div className={styles.footer_col}>
-									<h5>Follow us</h5>
+									<h5>{Tr.tr("translation:Follow_Us")}</h5>
 									<div className={styles.media}>
 										<Link to="#">{facebook}</Link>
 										<Link to="#">{tiktok}</Link>

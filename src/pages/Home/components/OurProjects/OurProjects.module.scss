@@ -23,7 +23,8 @@
 	.project_card {
 		position: relative;
 		@include borderRadius(4px 4px 0 0);
-		margin-bottom: 27px;
+		// margin-bottom: 27px;
+		margin-bottom: 10px;
 
 		.img {
 			width: 100%;
@@ -40,6 +41,7 @@
 				height: 100%;
 				-o-object-fit: cover;
 				object-fit: cover;
+				@include transition(0.3s);
 			}
 		}
 
@@ -63,6 +65,12 @@
 		}
 
 		&:hover {
+			.img {
+				img {
+					@include transform(scale(1.07));
+				}
+			}
+
 			h5 {
 				background-color: var(--bg-light);
 				color: var(--primary);
@@ -76,12 +84,14 @@
 		}
 
 		.project-swiper-pagination {
-			margin-top: 32px;
+			// margin-top: 32px;
+			margin-top: 10px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			gap: 6px;
 			min-height: 18px;
+			flex-wrap: wrap;
 
 			.swiper-pagination-bullet {
 				flex-shrink: 0;

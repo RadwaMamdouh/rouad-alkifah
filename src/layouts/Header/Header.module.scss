@@ -6,7 +6,7 @@
 	top: 53px;
 	left: 0;
 	width: 100%;
-	z-index: 3;
+	z-index: 9;
 	@include transition(0.3s ease-in-out);
 
 	.header_content {
@@ -44,6 +44,9 @@
 			.polygon {
 				width: 100%;
 				height: 100%;
+				#{$rtl} & {
+					@include transform(rotateY(180deg));
+				}
 			}
 
 			.logo {
@@ -182,7 +185,8 @@
 				text-align: center;
 				@include transition(0.3s);
 
-				&:hover {
+				&:hover,
+				&:global(.active) {
 					background-color: var(--bg-light);
 					@include font(16px, 600, var(--primary));
 				}

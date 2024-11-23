@@ -1,6 +1,8 @@
 import { Button } from "primereact/button";
 import PrimaryBtn from "components/PrimaryBtn/PrimaryBtn";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import styles from "./OurProducts.module.scss";
 
@@ -8,45 +10,41 @@ const OurProducts = () => {
 	const products = [
 		{
 			id: 1,
-			img1: "/img/product1.svg",
-			img2: "/img/product1-small1.svg",
-			img3: "/img/product1-small2.svg",
-			title: "Doors",
+			img1: "/img/door1.svg",
+			img2: "/img/door2.jpg",
+			img3: "/img/door3.jpg",
+			title: Tr.tr("translation:Doors"),
 		},
 		{
 			id: 2,
-			img1: "/img/product2.svg",
-			img2: "/img/product2-small1.svg",
-			img3: "/img/product2-small2.svg",
-			title: "Windows",
+			img1: "/img/window1.jpg",
+			img2: "/img/window2.jpg",
+			img3: "/img/window3.jpg",
+			title: Tr.tr("translation:Windows"),
 		},
 		{
 			id: 3,
-			img1: "/img/product3.svg",
-			img2: "/img/product3-small1.svg",
-			img3: "/img/product3-small2.svg",
-			title: "Domes",
+			img1: "/img/demo1.jpg",
+			img2: "/img/demo2.jpg",
+			img3: "/img/demo3.jpg",
+			title: Tr.tr("translation:Domes"),
 		},
 		{
 			id: 4,
-			img1: "/img/product4.svg",
-			img2: "/img/product4-small1.svg",
-			img3: "/img/product4-small2.svg",
-			title: "Building Facades",
+			img1: "/img/building-facades1.jpg",
+			img2: "/img/building-facades2.jpg",
+			img3: "/img/building-facades3.jpg",
+			title: Tr.tr("translation:Building_Facades"),
 		},
 	];
 
 	return (
 		<div className={styles.our_products}>
 			<div className="container">
-				<h2 className="fs_32 fw_700 text-black text-center">Our Products</h2>
+				<h2 className="fs_32 fw_700 text-black text-center">
+					{Tr.tr("translation:Our_Products")}
+				</h2>
 				<div className="hr_red mx-auto mbe_16"></div>
-				<p
-					className={`fs_18 fw_500 text-text-sub text-center mbe_40 mx-auto md_mbe24 ${styles.maxWidth}`}>
-					Ipsum is simply dummy text of the printing and typesetting industry.
-					Lorem Ipsum has been the industry's standard dummy text ever since the
-					1500s, when an unknown printer took a galley.
-				</p>
 
 				<div className={styles.products}>
 					{products.map((product) => (
@@ -82,7 +80,7 @@ const OurProducts = () => {
 				<PrimaryBtn
 					btn
 					type="button"
-					label="View More Products"
+					label={Tr.tr("translation:View_More_Products")}
 					classes="mx-auto md_w-100"
 				/>
 			</div>

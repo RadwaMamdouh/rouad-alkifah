@@ -12,6 +12,8 @@ import {
 } from "icons";
 import LanguageBtn from "components/LanguageBtn/LanguageBtn";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import styles from "./Header.module.scss";
 
@@ -55,7 +57,7 @@ const Header = () => {
 							</div>
 							<div className={styles.info}>
 								{envelop}
-								<span>info@rouad-alkafah.sa</span>
+								<span>info@rouadal-kafah.sa</span>
 							</div>
 							<div className={styles.info}>
 								{clock}
@@ -72,28 +74,38 @@ const Header = () => {
 					<div className={styles.bottom}>
 						<ul className={styles.menu_list}>
 							<li>
-								<NavLink to="/">Home</NavLink>
+								<NavLink to="/">{Tr.tr("translation:Home")}</NavLink>
 							</li>
 							<li>
-								<NavLink to="/products">Products</NavLink>
+								<NavLink to="/products">
+									{Tr.tr("translation:Products")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects">Projects</NavLink>
+								<NavLink to="/projects">
+									{Tr.tr("translation:Projects")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/maintenance">Maintenance</NavLink>
+								<NavLink to="/maintenance">
+									{Tr.tr("translation:Maintenance")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/news">News</NavLink>
+								<NavLink to="/news">{Tr.tr("translation:News")}</NavLink>
 							</li>
 							<li>
-								<NavLink to="/blogs">Blogs</NavLink>
+								<NavLink to="/blogs">{Tr.tr("translation:Blogs")}</NavLink>
 							</li>
 							<li>
-								<NavLink to="/about-us">About Us</NavLink>
+								<NavLink to="/about-us">
+									{Tr.tr("translation:About_Us")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/contact-us">Contact Us</NavLink>
+								<NavLink to="/contact-us">
+									{Tr.tr("translation:Contact_Us")}
+								</NavLink>
 							</li>
 						</ul>
 						<LanguageBtn />
@@ -108,28 +120,38 @@ const Header = () => {
 						</Link>
 						<ul className={styles.menu_list}>
 							<li>
-								<NavLink to="/">Home</NavLink>
+								<NavLink to="/">{Tr.tr("translation:Home")}</NavLink>
 							</li>
 							<li>
-								<NavLink to="/products">Products</NavLink>
+								<NavLink to="/products">
+									{Tr.tr("translation:Products")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/projects">Projects</NavLink>
+								<NavLink to="/projects">
+									{Tr.tr("translation:Projects")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/maintenance">Maintenance</NavLink>
+								<NavLink to="/maintenance">
+									{Tr.tr("translation:Maintenance")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/news">News</NavLink>
+								<NavLink to="/news">{Tr.tr("translation:News")}</NavLink>
 							</li>
 							<li>
-								<NavLink to="/blogs">Blogs</NavLink>
+								<NavLink to="/blogs">{Tr.tr("translation:Blogs")}</NavLink>
 							</li>
 							<li>
-								<NavLink to="/about-us">About Us</NavLink>
+								<NavLink to="/about-us">
+									{Tr.tr("translation:About_Us")}
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to="/contact-us">Contact Us</NavLink>
+								<NavLink to="/contact-us">
+									{Tr.tr("translation:Contact_Us")}
+								</NavLink>
 							</li>
 						</ul>
 					</div>
