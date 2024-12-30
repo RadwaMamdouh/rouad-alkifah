@@ -48,37 +48,37 @@ a {
 }
 
 *::-webkit-input-placeholder {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgba(#808b9a, 0.7);
+	font-size: 16px;
+	font-weight: 500;
+	color: #677076;
 	@include transition(all 0.3s ease);
 }
 
 *::-moz-placeholder {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgba(#808b9a, 0.7);
+	font-size: 16px;
+	font-weight: 500;
+	color: #677076;
 	@include transition(all 0.3s ease);
 }
 
 *:-ms-input-placeholder {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgba(#808b9a, 0.7);
+	font-size: 16px;
+	font-weight: 500;
+	color: #677076;
 	@include transition(all 0.3s ease);
 }
 
 *::-ms-input-placeholder {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgba(#808b9a, 0.7);
+	font-size: 16px;
+	font-weight: 500;
+	color: #677076;
 	@include transition(all 0.3s ease);
 }
 
 *::placeholder {
-	font-size: 14px;
-	font-weight: 400;
-	color: rgba(#808b9a, 0.7);
+	font-size: 16px;
+	font-weight: 500;
+	color: #677076;
 	@include transition(all 0.3s ease);
 }
 
@@ -152,5 +152,41 @@ select:-webkit-autofill:focus {
 	.md_mbe24 {
 		-webkit-margin-after: 24px !important;
 		margin-block-end: 24px !important;
+	}
+}
+
+// Inputs
+.input {
+	padding: 8px;
+	background-color: var(--bg-light);
+	border: 1px solid var(--light-gray);
+	@include borderRadius(4px);
+	display: block;
+	width: 100%;
+	box-shadow: none;
+	@include transition(0.3s);
+
+	&:hover,
+	&:focus {
+		border-color: var(--primary);
+	}
+}
+
+.textArea {
+	padding: 8px;
+	background-color: var(--bg-light);
+	border: 1px solid var(--light-gray);
+	@include borderRadius(4px);
+	display: block;
+	width: 100%;
+	box-shadow: none;
+	@include transition(0.3s);
+	height: 146px;
+	overflow: auto;
+	resize: none;
+
+	&:hover,
+	&:focus {
+		border-color: var(--primary);
 	}
 }

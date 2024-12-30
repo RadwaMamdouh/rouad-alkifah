@@ -42,6 +42,10 @@ $colors: (
 	.#{$name} {
 		color: #{$color} !important;
 	}
+
+	.bb_#{$name} {
+		border-bottom-color: #{$color};
+	}
 }
 
 @each $name, $color in $colors {
@@ -51,7 +55,7 @@ $colors: (
 }
 
 // *************** Margin & Padding ******************
-@for $i from 0 through 70 {
+@for $i from 0 through 100 {
 	// Margin Block End
 	.mbe_#{$i} {
 		-webkit-margin-after: #{$i}px !important;
@@ -172,6 +176,22 @@ $colors: (
 @for $i from 1 through 50 {
 	.gap_#{$i} {
 		gap: #{$i}px;
+	}
+}
+
+// ***************** Line Height *****************
+@for $i from 1 through 100 {
+	.lineH_#{$i} {
+		line-height: #{$i}px;
+	}
+}
+
+// ***************** Line Height *****************
+@each $name, $color in $colors {
+	@for $i from 1 through 3 {
+		.bb_#{$i}_#{$name} {
+			border-bottom: #{$i}px solid #{$color};
+		}
 	}
 }
 

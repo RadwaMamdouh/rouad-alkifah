@@ -1,1 +1,40 @@
 @use "assets/scss/vars.scss" as *;
+
+.contact_us {
+	&_head {
+		background-image: url(~/public/img/contact-us-bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 65px 0 212px;
+	}
+
+	&_body {
+		margin-top: -156px;
+
+		.contact_box {
+			background-color: var(--white);
+			@include borderRadius(16px);
+			box-shadow: 0px 13px 19px 0px #00000012;
+			overflow: hidden;
+
+			.contact_form {
+				padding: 24px;
+				height: 100%;
+
+				@media (max-width: 767.98px) {
+					order: -1;
+				}
+			}
+		}
+	}
+
+	:global {
+		.mbs_48 {
+			@media (max-width: 767.98px) {
+				-webkit-margin-before: 32px !important;
+				margin-block-start: 32px !important;
+			}
+		}
+	}
+}
