@@ -9,10 +9,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { useTranslation } from "react-i18next";
 import { Button } from "primereact/button";
 import PrimaryBtn from "components/PrimaryBtn/PrimaryBtn";
 
+import { useTranslation } from "react-i18next";
 import { Tr } from "utils/i18n";
 
 // Styles

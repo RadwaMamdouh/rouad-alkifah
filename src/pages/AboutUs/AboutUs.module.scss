@@ -1,0 +1,23 @@
+@use "assets/scss/vars.scss" as *;
+
+.about_us {
+	&_head {
+		padding: 56px 0;
+		background-image: url(~/public/img/about-us-bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center right;
+
+		@media (max-width: 575.98px) {
+			background-image: url(~/public/img/about-us-bg-responsive.svg);
+		}
+	}
+
+	.whoAre_img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+	}
+}

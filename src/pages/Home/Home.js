@@ -1,6 +1,6 @@
 import Intro from "./components/Intro/Intro";
 import Statistics from "./components/Statistics/Statistics";
-import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
+import WhoWeAre from "components/WhoWeAre/WhoWeAre";
 import OurProducts from "./components/OurProducts/OurProducts";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Innovation from "./components/Innovation/Innovation";
@@ -16,7 +16,12 @@ const Home = () => {
 		<div>
 			<Intro />
 			<Statistics />
-			<WhoWeAre />
+			<WhoWeAre>
+				<div className={styles.imgs}>
+					<img src="/img/who-we.svg" alt="" className={styles.main_img} />
+					<img src="/img/who-we2.svg" alt="" className={styles.small_img} />
+				</div>
+			</WhoWeAre>
 			<OurProducts />
 			<WhyChooseUs />
 			<Innovation />

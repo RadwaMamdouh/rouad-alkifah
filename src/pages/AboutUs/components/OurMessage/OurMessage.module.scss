@@ -1,0 +1,108 @@
+@use "assets/scss/vars.scss" as *;
+
+.our_message {
+	background-color: var(--bg-dark8);
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+	overflow: hidden;
+
+	@media (max-width: 1199.98px) {
+		flex-direction: column;
+	}
+
+	@media (max-width: 1199.98px) {
+		gap: 0;
+	}
+
+	.img {
+		flex-shrink: 0;
+		width: 618px;
+		height: auto;
+		overflow: hidden;
+
+		@media (max-width: 1199.98px) {
+			width: 100%;
+			height: auto;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+	}
+
+	.text_side {
+		padding: 50px 0;
+		-webkit-padding-end: 100px;
+		padding-inline-end: 100px;
+		position: relative;
+		overflow: hidden;
+		-webkit-padding-start: 110px;
+		padding-inline-start: 110px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media (max-width: 1399.98px) {
+			-webkit-padding-end: 50px;
+			padding-inline-end: 50px;
+		}
+
+		@media (max-width: 1199.98px) {
+			padding: 32px 16px;
+		}
+
+		.float1 {
+			width: 337px;
+			position: absolute;
+			bottom: -20%;
+			right: -20%;
+			@include transform(skew(-10deg));
+		}
+
+		.float2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include transform(translateX(-50%) skew(-10deg));
+		}
+	}
+
+	:global {
+		.ourMsg-swiper-pagination {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 6px;
+			min-height: 18px;
+			width: 100%;
+
+			@media (max-width: 1199.98px) {
+				justify-content: center;
+			}
+
+			.swiper-pagination-bullet {
+				flex-shrink: 0;
+				margin: 0;
+				width: 14px;
+				height: 14px;
+				@include borderRadius(100%);
+				background-color: var(--white);
+				border: 1px solid var(--dark-gray);
+				opacity: 1;
+				@include transition(0.3s);
+
+				&:hover,
+				&-active {
+					width: 18px;
+					height: 18px;
+					background-color: var(--primary);
+					border-color: var(--primary);
+				}
+			}
+		}
+	}
+}
