@@ -23,6 +23,17 @@ export const en = {
 	Why_Choose_Us: "Why Choose Us",
 	Our_Projects: "Our Projects",
 	View_More_Projects: "View More Projects",
+	Get_In_Touch:
+		"Get in touch with us however you prefer, we're here to help you",
+	Contact_Information: "Contact Information",
+	Hours_From_To: "Saturday to Thursday From 8 AM to 9 PM",
+	Any_Questions: "Any Questions ? Just write us a message!",
+	Enter_Your_Name: "Enter Your Name",
+	Enter_Your_Email: "Enter Your Email",
+	Enter_Your_Phone_Number: "Enter Your Phone Number",
+	Enter_Your_Message: "Enter Your Message",
+	Send_Message: "Send Message",
+	Our_Location: "Our Location",
 };
 
 export const ar = {
@@ -50,4 +61,14 @@ export const ar = {
 	Why_Choose_Us: "لماذا تختارنا؟",
 	Our_Projects: "مشاريعنا",
 	View_More_Projects: "عرض المزيد من المشاريع",
+	Get_In_Touch: "تواصل معنا بالطريقة التي تفضلها، نحن هنا لمساعدتك",
+	Contact_Information: "معلومات التواصل",
+	Hours_From_To: "من السبت إلى الخميس من الساعة 8 صباحًا حتى 9 مساءً",
+	Any_Questions: "هل لديك أي أسئلة؟ فقط اكتب لنا رسالة!",
+	Enter_Your_Name: "أدخل اسمك",
+	Enter_Your_Email: "أدخل بريدك الإلكتروني",
+	Enter_Your_Phone_Number: "أدخل رقم هاتفك",
+	Enter_Your_Message: "أدخل رسالتك",
+	Send_Message: "إرسال رسالة",
+	Our_Location: "موقعنا",
 };

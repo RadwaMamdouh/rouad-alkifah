@@ -10,6 +10,8 @@ import {
 } from "icons";
 import styles from "./ContactInfo.module.scss";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import { Link } from "react-router-dom";
 
@@ -18,7 +20,7 @@ const ContactInfo = () => {
 		<div className={styles.contact_info}>
 			<div className="mb-3">
 				<h3 className="fs_18 fw_700 white pb_8 mb-3 bb_1_secondary">
-					Contact Information
+					{Tr.tr("translation:Contact_Information")}
 				</h3>
 				<div className="d-flex align-items-center justify-content-start gap_8 mb-3">
 					<span className="flex-shrink-0">{location}</span>
@@ -37,7 +39,7 @@ const ContactInfo = () => {
 			</div>
 			<div className="mb-3">
 				<h3 className="fs_18 fw_700 white pb_8 mb-3 bb_1_secondary">
-					Follow us
+					{Tr.tr("translation:Follow_Us")}
 				</h3>
 				<div className={styles.media}>
 					<Link to="#">{facebook}</Link>
@@ -48,12 +50,12 @@ const ContactInfo = () => {
 			</div>
 			<div className="mb-3">
 				<h3 className="fs_18 fw_700 white pb_8 mb-3 bb_1_secondary">
-					Work Hours
+					{Tr.tr("translation:Work_Hours")}
 				</h3>
 				<div className="d-flex align-items-center justify-content-start gap_8 mb-3">
 					<span className="flex-shrink-0">{clock}</span>
 					<span className="fs_16 fw_500 white">
-						Saturday to Thursday From 8 AM to 9 PM
+						{Tr.tr("translation:Hours_From_To")}
 					</span>
 				</div>
 			</div>

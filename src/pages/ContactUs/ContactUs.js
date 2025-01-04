@@ -5,6 +5,8 @@ import { InputTextarea } from "primereact/inputtextarea";
 import PrimaryBtn from "components/PrimaryBtn/PrimaryBtn";
 import GoogleMapBox from "./components/GoogleMapBox/GoogleMapBox";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import styles from "./ContactUs.module.scss";
 
@@ -39,11 +41,11 @@ const ContactUs = () => {
 			<div className={styles.contact_us_head}>
 				<div className="container">
 					<h1 className="fs_48 fw_800 white text-center mbe_8 lineH_72">
-						Contacts Us
+						{Tr.tr("translation:Contact_Us")}
 					</h1>
 					<div className="hr_red mbe_8 mx-auto"></div>
 					<p className="fs_24 fw_500 white text-center">
-						Get in touch with us however you prefer, we're here to help you
+						{Tr.tr("translation:Get_In_Touch")}
 					</p>
 				</div>
 			</div>
@@ -58,14 +60,14 @@ const ContactUs = () => {
 							<div className={`col-md-6 px-0 ${styles.contact_form}`}>
 								<div className="p2424">
 									<h2 className="fs_18 fw_700 primary pb_8 mb-4 bb_1_secondary">
-										Any Questions ? Just write us a message!
+										{Tr.tr("translation:Any_Questions")}
 									</h2>
 									<form onSubmit={formik.handleSubmit}>
 										<div className="row">
 											<div className="col-md-12 mb-3">
 												<InputText
 													name="name"
-													placeholder="Enter Your Name"
+													placeholder={Tr.tr("translation:Enter_Your_Name")}
 													value={formik.values.name}
 													onChange={formik.handleChange}
 													className="input"
@@ -73,7 +75,7 @@ const ContactUs = () => {
 											</div>
 											<div className="col-md-6 mb-3">
 												<InputText
-													placeholder="Enter Your Email"
+													placeholder={Tr.tr("translation:Enter_Your_Email")}
 													value={formik.values.email}
 													onChange={formik.handleChange}
 													className="input"
@@ -81,7 +83,9 @@ const ContactUs = () => {
 											</div>
 											<div className="col-md-6 mb-3">
 												<InputText
-													placeholder="Enter Your Phone Number"
+													placeholder={Tr.tr(
+														"translation:Enter_Your_Phone_Number"
+													)}
 													value={formik.values.phone}
 													onChange={formik.handleChange}
 													className="input"
@@ -89,7 +93,7 @@ const ContactUs = () => {
 											</div>
 											<div className="col-md-12 mb-3">
 												<InputTextarea
-													placeholder="Enter Your Message"
+													placeholder={Tr.tr("translation:Enter_Your_Message")}
 													value={formik.values.message}
 													onChange={formik.handleChange}
 													className="textArea"
@@ -99,7 +103,7 @@ const ContactUs = () => {
 												<PrimaryBtn
 													btn
 													type="submit"
-													label="Send Message"
+													label={Tr.tr("translation:Send_Message")}
 													classes="w-100"
 												/>
 											</div>
@@ -120,7 +124,7 @@ const ContactUs = () => {
 			<div className="mbs_48">
 				<div className="container">
 					<h2 className="fs_32 fw_700 black text-center lineH_48">
-						Our Location
+						{Tr.tr("translation:Our_Location")}
 					</h2>
 					<div className="hr_red mbe_32 mx-auto"></div>
 				</div>

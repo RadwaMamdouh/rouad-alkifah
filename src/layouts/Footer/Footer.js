@@ -132,7 +132,7 @@ const Footer = () => {
 									<h5>{Tr.tr("translation:Work_Hours")}</h5>
 									<div className={styles.work_row}>
 										{clock}
-										<span>Saturday to Thursday From 8 AM to 9 PM</span>
+										<span>{Tr.tr("translation:Hours_From_To")}</span>
 									</div>
 								</div>
 								<div className={styles.footer_col}>
