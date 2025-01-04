@@ -34,7 +34,7 @@ const ContactInfo = () => {
 				</div>
 				<div className="d-flex align-items-center justify-content-start gap_8 mb-3">
 					<span className="flex-shrink-0">{envelop}</span>
-					<span className="fs_16 fw_500 white">info@rouad-alkafah.sa</span>
+					<span className="fs_16 fw_500 white">info@rouadal-kafah.sa</span>
 				</div>
 			</div>
 			<div className="mb-3">

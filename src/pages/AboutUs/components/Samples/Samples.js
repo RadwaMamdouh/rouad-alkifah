@@ -26,7 +26,7 @@ const Samples = () => {
 			descEn:
 				"That's a powerful principle! Combining simplicity with uncompromised quality is a great approach. It ensures that even though things are made straightforward, they still meet the highest standards.",
 			descAr:
-				"هذا مبدأ قوي! إن الجمع بين البساطة والجودة غير المساومة هو نهج رائع. فهو يضمن أنه على الرغم من أن الأمور بسيطة، إلا أنها لا تزال تلبي أعلى المعايير.",
+				"هذا مبدأ قوي! إن الجمع بين البساطة والجودة هو نهج رائع. فهو يضمن أنه على الرغم من أن الأمور بسيطة، إلا أنها لا تزال تلبي أعلى المعايير.",
 		},
 		{
 			id: 3,
