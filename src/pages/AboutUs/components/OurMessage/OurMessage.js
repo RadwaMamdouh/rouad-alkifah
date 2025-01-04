@@ -80,12 +80,12 @@ const OurMessage = () => {
 						}}>
 						{slides.map((slide, index) => (
 							<SwiperSlide key={index}>
-								<h3 className="fs_32 fw_700 white mb_10">
+								<h3 className="fs_32 fw_700 white mbe_10">
 									{currLang === "ar" ? slide.titleAr : slide.titleEn}
 								</h3>
-								<div className="hr_red mb_10"></div>
+								<div className="hr_red mbe_10"></div>
 								<p
-									className="fs_20 fw_500 white mb_16"
+									className="fs_20 fw_500 white mbe_16"
 									style={{ minHeight: "150px" }}>
 									{currLang === "ar" ? slide.descAr : slide.descEn}
 								</p>

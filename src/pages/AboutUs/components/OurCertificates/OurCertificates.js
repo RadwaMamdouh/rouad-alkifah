@@ -7,10 +7,10 @@ import styles from "./OurCertificates.module.scss";
 
 const OurCertificates = () => {
 	return (
-		<div className={styles.our_certificates}>
+		<section className={styles.our_certificates}>
 			<div className="container">
-				<div className="mb_32">
-					<h2 className="fs_32 fw_700 black text-center mb_4">
+				<div className="mbe_32">
+					<h2 className="fs_32 fw_700 black text-center mbe_4">
 						{Tr.tr("translation:Our_Certificates")}
 					</h2>
 					<div className="hr_red mx-auto"></div>
@@ -59,7 +59,7 @@ const OurCertificates = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

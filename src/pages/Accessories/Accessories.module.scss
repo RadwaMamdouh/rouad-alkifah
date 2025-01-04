@@ -1,0 +1,181 @@
+@use "assets/scss/vars.scss" as *;
+
+.accessories {
+	&_head {
+		padding: 56px 0 121px;
+		background-image: url(~/public/img/accessories-bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+	}
+
+	.brands_wrapper {
+		margin-top: -54px;
+		margin-bottom: 40px;
+
+		@media (max-width: 575.98px) {
+			margin-bottom: 16px;
+		}
+
+		.brands {
+			padding: 16px;
+			background-color: var(--white);
+			@include borderRadius(4px);
+			box-shadow: 0px 13px 19px 0px #00000012;
+
+			.brand_box {
+				padding: 16px;
+				background-color: var(--white);
+				border: 1px solid var(--light-gray);
+				@include borderRadius(4px);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 16px;
+
+				@media (max-width: 575.98px) {
+					gap: 8px;
+				}
+
+				img {
+					max-width: 100%;
+					height: 40px;
+				}
+			}
+		}
+	}
+
+	.mission_card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.img {
+			width: 146px;
+			height: 146px;
+			padding: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			margin-bottom: 16px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	:global {
+		.mbe_40 {
+			@media (max-width: 575.98px) {
+				-webkit-margin-after: 32px !important;
+				margin-block-end: 32px !important;
+			}
+		}
+	}
+
+	.accessories_card_main {
+		background-color: var(--bg-dark85);
+		@include borderRadius(4px);
+		overflow: hidden;
+
+		.img {
+			width: 100%;
+			height: 148px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+
+			@media (max-width: 575.98px) {
+				height: 224px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+		}
+
+		.title_desc {
+			padding: 16px;
+			background-color: var(--bg-dark85);
+			position: relative;
+
+			@media (max-width: 575.98px) {
+				padding: 32px 16px;
+			}
+
+			.overlay {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+				-o-object-position: bottom;
+				object-position: bottom;
+
+				@media (max-width: 575.98px) {
+					display: none;
+				}
+
+				&.overlay_small {
+					display: none;
+
+					@media (max-width: 575.98px) {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.accessories_cards {
+		margin-bottom: 120px;
+	}
+
+	.accessories_card {
+		background-color: var(--white);
+		border: 1px solid var(--light-gray);
+		@include borderRadius(4px);
+		height: 100%;
+		overflow: hidden;
+
+		.img {
+			width: 100%;
+			height: 148px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
+		}
+
+		.title_desc {
+			padding: 24px;
+		}
+	}
+
+	:global {
+		.px_sm_12 {
+			@media (min-width: 576px) {
+				padding-inline: 12px !important;
+			}
+		}
+	}
+}

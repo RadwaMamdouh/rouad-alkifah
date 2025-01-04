@@ -71,6 +71,11 @@ const InnerHeader = () => {
 									</NavLink>
 								</li>
 								<li>
+									<NavLink to="/accessories">
+										{Tr.tr("translation:Accessories")}
+									</NavLink>
+								</li>
+								<li>
 									<NavLink to="/maintenance">
 										{Tr.tr("translation:Maintenance")}
 									</NavLink>

@@ -186,7 +186,7 @@ $colors: (
 	}
 }
 
-// ***************** Line Height *****************
+// ***************** Border Bottom *****************
 @each $name, $color in $colors {
 	@for $i from 1 through 3 {
 		.bb_#{$i}_#{$name} {

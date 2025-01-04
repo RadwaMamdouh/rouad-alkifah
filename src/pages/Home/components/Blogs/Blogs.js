@@ -38,8 +38,8 @@ const Blogs = () => {
 	return (
 		<section className={styles.blogs}>
 			<div className="container">
-				<div className="mb_32">
-					<h2 className="fs_32 fw_700 black text-center mb_4">Blogs</h2>
+				<div className="mbe_32">
+					<h2 className="fs_32 fw_700 black text-center mbe_4">Blogs</h2>
 					<div className="hr_red mx-auto"></div>
 				</div>
 

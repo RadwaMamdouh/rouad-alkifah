@@ -41,7 +41,7 @@ const Samples = () => {
 	];
 
 	return (
-		<div className={styles.samples}>
+		<section className={styles.samples}>
 			<div className="container">
 				<div className="row">
 					{samples.map((sample) => (
@@ -50,7 +50,7 @@ const Samples = () => {
 								<div className={styles.img}>
 									<img src={sample.image} alt="" />
 								</div>
-								<h5 className="fs_20 fw_700 primary mb_8 text-center">
+								<h5 className="fs_20 fw_700 primary mbe_8 text-center">
 									{currLang === "ar" ? sample.titleAr : sample.titleEn}
 								</h5>
 								<p className="fs_16 fw_500 text text-center">
@@ -61,7 +61,7 @@ const Samples = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

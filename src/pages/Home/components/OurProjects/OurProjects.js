@@ -138,7 +138,7 @@ const OurProjects = () => {
 				</h2>
 				<div className="hr_red mx-auto"></div>
 				<p
-					className={`fs_18 fw_500 text-sub text-center mb_24 mx-auto ${styles.maxWidth}`}>
+					className={`fs_18 fw_500 text-sub text-center mbe_24 mx-auto ${styles.maxWidth}`}>
 					{currLang === "ar" ? "صور لبعض المشاريع" : "Photos of Some Projects"}
 				</p>
 

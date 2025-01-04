@@ -7,8 +7,8 @@ const NewsRoom = () => {
 	return (
 		<section className={styles.news_room}>
 			<div className="container">
-				<div className="mb_32">
-					<h2 className="fs_32 fw_700 white text-center mb_4">Newsroom</h2>
+				<div className="mbe_32">
+					<h2 className="fs_32 fw_700 white text-center mbe_4">Newsroom</h2>
 					<div className="hr_red mx-auto"></div>
 				</div>
 				<div className={styles.rooms}>
