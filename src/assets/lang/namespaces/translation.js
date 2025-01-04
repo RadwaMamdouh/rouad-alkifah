@@ -34,6 +34,8 @@ export const en = {
 	Enter_Your_Message: "Enter Your Message",
 	Send_Message: "Send Message",
 	Our_Location: "Our Location",
+	We_Believe_In_Success: "We Strongly Believe in Success",
+	Our_Certificates: "Our Certificates",
 };
 
 export const ar = {
@@ -71,4 +73,6 @@ export const ar = {
 	Enter_Your_Message: "أدخل رسالتك",
 	Send_Message: "إرسال رسالة",
 	Our_Location: "موقعنا",
+	We_Believe_In_Success: "نحن نؤمن بشدة بالنجاح",
+	Our_Certificates: "شهاداتنا",
 };

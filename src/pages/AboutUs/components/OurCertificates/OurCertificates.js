@@ -1,5 +1,7 @@
 import { Image } from "primereact/image";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import styles from "./OurCertificates.module.scss";
 
@@ -9,7 +11,7 @@ const OurCertificates = () => {
 			<div className="container">
 				<div className="mb_32">
 					<h2 className="fs_32 fw_700 black text-center mb_4">
-						Our Certificates
+						{Tr.tr("translation:Our_Certificates")}
 					</h2>
 					<div className="hr_red mx-auto"></div>
 				</div>

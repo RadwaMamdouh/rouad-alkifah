@@ -3,6 +3,8 @@ import OurMessage from "./components/OurMessage/OurMessage";
 import Samples from "./components/Samples/Samples";
 import OurCertificates from "./components/OurCertificates/OurCertificates";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import styles from "./AboutUs.module.scss";
 
@@ -12,11 +14,11 @@ const AboutUs = () => {
 			<section className={styles.about_us_head}>
 				<div className="container">
 					<h1 className="fs_48 fw_800 white text-center mbe_8 lineH_72">
-						About Us
+						{Tr.tr("translation:About_Us")}
 					</h1>
 					<div className="hr_red mbe_8 mx-auto"></div>
 					<p className="fs_24 fw_500 white text-center">
-						We Strongly Believe in Success
+						{Tr.tr("translation:We_Believe_In_Success")}
 					</p>
 				</div>
 			</section>

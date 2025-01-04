@@ -19,16 +19,28 @@ const OurMessage = () => {
 
 	const slides = [
 		{
-			title: "Our Message",
-			desc: "We carry a message emanating from the core, aspiring for a better future for our dear country, and we aspire to provide works and services that in turn contribute to building a bright future in line with the Kingdom's Vision 2030 and based on our expertise and competence with which we ensure the design and implementation of all aluminum and glass works.",
+			titleEn: "Our Message",
+			titleAr: "رسالتنا",
+			descEn:
+				"We carry a message emanating from the core, aspiring for a better future for our dear country, and we aspire to provide works and services that in turn contribute to building a bright future in line with the Kingdom's Vision 2030 and based on our expertise and competence with which we ensure the design and implementation of all aluminum and glass works.",
+			descAr:
+				"نحمل رسالة تنبع من الصميم تتطلع لمستقبل أفضل لوطننا العزيز، ونطمح لتقديم أعمال وخدمات تساهم بدورها في بناء مستقبل مشرق يتوافق مع رؤية المملكة 2030، ومن خلال خبراتنا وكفاءتنا التي نضمن بها تصميم وتنفيذ كافة أعمال الألمنيوم والزجاج.",
 		},
 		{
-			title: "Our Vision",
-			desc: "Contribute effectively to the aluminum industry in the Kingdom, and to seek to bring about a development and growth in this sector, which plays its role in the movement of economic growth in order to reach the forefront and leadership in this field.",
+			titleEn: "Our Vision",
+			titleAr: "رؤيتنا",
+			descEn:
+				"Contribute effectively to the aluminum industry in the Kingdom, and to seek to bring about a development and growth in this sector, which plays its role in the movement of economic growth in order to reach the forefront and leadership in this field.",
+			descAr:
+				"المساهمة الفعالة في صناعة الألمنيوم في المملكة، والسعي إلى إحداث التطور والنمو في هذا القطاع الذي يلعب دوره في حركة النمو الاقتصادي للوصول إلى الصدارة والريادة في هذا المجال.",
 		},
 		{
-			title: "Our goal",
-			desc: "Our goal is to be a leading company in the world of aluminium and glass industries and an ideal choice for all customers by adhering to the best specifications, highest quality and lowest prices",
+			titleEn: "Our goal",
+			titleAr: "هدفنا",
+			descEn:
+				"Our goal is to be a leading company in the world of aluminium and glass industries and an ideal choice for all customers by adhering to the best specifications, highest quality and lowest prices",
+			descAr:
+				"هدفنا أن نكون شركة رائدة في عالم صناعات الألمنيوم والزجاج والاختيار الأمثل لجميع العملاء من خلال الالتزام بأفضل المواصفات وأعلى جودة وأقل الأسعار",
 		},
 	];
 
@@ -68,12 +80,14 @@ const OurMessage = () => {
 						}}>
 						{slides.map((slide, index) => (
 							<SwiperSlide key={index}>
-								<h3 className="fs_32 fw_700 white mb_10">{slide.title}</h3>
+								<h3 className="fs_32 fw_700 white mb_10">
+									{currLang === "ar" ? slide.titleAr : slide.titleEn}
+								</h3>
 								<div className="hr_red mb_10"></div>
 								<p
 									className="fs_20 fw_500 white mb_16"
 									style={{ minHeight: "150px" }}>
-									{slide.desc}
+									{currLang === "ar" ? slide.descAr : slide.descEn}
 								</p>
 							</SwiperSlide>
 						))}
