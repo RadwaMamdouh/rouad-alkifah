@@ -7,10 +7,18 @@
 		background-size: cover;
 		background-position: center;
 		padding: 65px 0 212px;
+
+		@media (max-width: 575.98px) {
+			padding: 40px 0 216px;
+		}
 	}
 
 	&_body {
 		margin-top: -156px;
+
+		@media (max-width: 575.98px) {
+			margin-top: -162px;
+		}
 
 		.contact_box {
 			background-color: var(--white);

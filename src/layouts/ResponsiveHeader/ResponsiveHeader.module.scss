@@ -179,10 +179,24 @@
 								order: 1;
 								margin: 0;
 								color: var(--white);
+
+								#{$rtl} & {
+									@include transform(rotate(180deg));
+								}
 							}
 
 							.p-accordion-header-text {
 								@include font(16px, 500, var(--white));
+							}
+						}
+
+						&.p-highlight {
+							.p-accordion-header-link {
+								.p-icon {
+									#{$rtl} & {
+										@include transform(rotate(0));
+									}
+								}
 							}
 						}
 					}
