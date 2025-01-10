@@ -175,7 +175,7 @@
 		li {
 			flex-shrink: 0;
 
-			a {
+			.menu_item {
 				padding: 8px;
 				display: flex;
 				align-items: center;
@@ -183,12 +183,123 @@
 				@include borderRadius(4px);
 				@include font(16px, 500, var(--black));
 				text-align: center;
+				background-color: var(--transparent);
+				border: 0;
+				box-shadow: none;
+				line-height: 24px;
 				@include transition(0.3s);
 
 				&:hover,
 				&:global(.active) {
 					background-color: var(--bg-light);
 					color: var(--primary);
+				}
+
+				&.menu_btn {
+					gap: 4px;
+
+					:global {
+						.p-button-label {
+							@include font(16px, 500, var(--black));
+							@include transition(0.3s);
+						}
+
+						.p-button-icon {
+							margin: 0;
+							order: 1;
+							color: var(--black);
+							@include transition(0.3s);
+						}
+					}
+
+					&.show {
+						background-color: var(--bg-light);
+						color: var(--primary);
+
+						:global {
+							.p-button-label {
+								color: var(--primary);
+							}
+
+							.p-button-icon {
+								@include transform(rotate(180deg));
+								color: var(--primary);
+							}
+						}
+					}
+
+					&:hover,
+					&:global(.active) {
+						background-color: var(--bg-light);
+						color: var(--primary);
+
+						:global {
+							.p-button-label {
+								color: var(--primary);
+							}
+
+							.p-button-icon {
+								color: var(--primary);
+							}
+						}
+					}
+				}
+			}
+
+			:global {
+				.p-overlaypanel {
+					margin-top: 8px;
+					top: 100% !important;
+					#{$ltr} & {
+						left: 0 !important;
+					}
+					#{$rtl} & {
+						right: 0 !important;
+					}
+					width: auto;
+					min-width: 900px;
+					border: 1px solid var(--light-gray);
+					box-shadow: 0px 13px 19px 0px #00000012;
+					@include borderRadius(4px);
+
+					@media (max-width: 1299.98px) {
+						min-width: 820px;
+					}
+
+					&::before,
+					&::after {
+						display: none;
+					}
+
+					&-content {
+						padding: 16px;
+
+						[class*="col-"] {
+							&:not(:last-child) {
+								-webkit-border-end: 1px solid var(--light-gray);
+								border-inline-end: 1px solid var(--light-gray);
+							}
+						}
+
+						h5 {
+							padding: 8px;
+							@include font(13px, 700, var(--primary));
+						}
+
+						.sub_menu_item {
+							padding: 8px;
+							@include font(16px, 400, var(--black));
+							display: flex;
+							align-items: center;
+							justify-content: flex-start;
+
+							&:hover,
+							&:global(.active) {
+								background-color: var(--bg-light);
+								color: var(--primary);
+							}
+						}
+					}
 				}
 			}
 		}
