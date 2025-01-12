@@ -31,7 +31,7 @@ const Catalog = () => {
 						<img src="/img/catalog.jpg" alt="" className={styles.img} />
 						<div className={styles.img_content}>
 							<img src="/img/logo-white2.svg" alt="" />
-							<h2>{Tr.tr("traslation:Aluminum_Systems")}</h2>
+							<h2>{Tr.tr("translation:Aluminum_Systems")}</h2>
 						</div>
 					</div>
 				</div>
