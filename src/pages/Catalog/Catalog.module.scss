@@ -1,0 +1,110 @@
+@use "assets/scss/vars.scss" as *;
+
+.catalog {
+	padding: 0 15px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+
+	&_text {
+		-webkit-padding-start: 20%;
+		padding-inline-start: 20%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+
+		@media (max-width: 991.98px) {
+			padding: 40px;
+			-webkit-padding-start: 10%;
+			padding-inline-start: 10%;
+			align-items: center;
+		}
+	}
+
+	.img_side {
+		@media (max-width: 991.98px) {
+			order: -1;
+		}
+	}
+
+	&_img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		#{$ltr} & {
+			-webkit-clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+			clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+		}
+		#{$rtl} & {
+			-webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+			clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+		}
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+
+		@media (max-width: 991.98px) {
+			-webkit-clip-path: none !important;
+			clip-path: none !important;
+			height: 365px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #00000080;
+		}
+
+		.img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+
+		.img_content {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			#{$ltr} & {
+				@include transform(translate(-40%, -50%));
+			}
+			#{$rtl} & {
+				@include transform(translate(-60%, -50%));
+			}
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			padding: 10px;
+			z-index: 1;
+
+			@media (max-width: 991.98px) {
+				padding: 56px 10px;
+				@include transform(translate(-50%, -50%) !important);
+			}
+
+			img {
+				width: 193px;
+				height: 193px;
+			}
+
+			h2 {
+				@include font(60px, 700, var(--white));
+				line-height: 90px;
+
+				@media (max-width: 1199.98px) {
+					font-size: 40px;
+					line-height: 60px;
+				}
+			}
+		}
+	}
+}

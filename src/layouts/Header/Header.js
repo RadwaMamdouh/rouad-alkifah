@@ -152,6 +152,11 @@ const Header = ({ scrolled }) => {
 								</NavLink>
 							</li>
 							<li>
+								<NavLink to="/catalog" className={styles.menu_item}>
+									{Tr.tr("translation:Catalog")}
+								</NavLink>
+							</li>
+							<li>
 								<NavLink to="/maintenance" className={styles.menu_item}>
 									{Tr.tr("translation:Maintenance")}
 								</NavLink>
@@ -229,6 +234,16 @@ const Header = ({ scrolled }) => {
 							<li>
 								<NavLink to="/projects" className={styles.menu_item}>
 									{Tr.tr("translation:Projects")}
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="/accessories" className={styles.menu_item}>
+									{Tr.tr("translation:Accessories")}
+								</NavLink>
+							</li>
+							<li>
+								<NavLink to="/catalog" className={styles.menu_item}>
+									{Tr.tr("translation:Catalog")}
 								</NavLink>
 							</li>
 							<li>

@@ -36,6 +36,11 @@ export const en = {
 	Our_Location: "Our Location",
 	We_Believe_In_Success: "We Strongly Believe in Success",
 	Our_Certificates: "Our Certificates",
+	Catalog: "Catalog",
+	Our_Catalog: "Our Catalog",
+	Our_Catalog_Desc:
+		"Explore more about our company and products through our online catalog",
+	Aluminum_Systems: "Aluminum Systems",
 };
 
 export const ar = {
@@ -75,4 +80,9 @@ export const ar = {
 	Our_Location: "موقعنا",
 	We_Believe_In_Success: "نحن نؤمن بشدة بالنجاح",
 	Our_Certificates: "شهاداتنا",
+	Catalog: "الكتالوج",
+	Our_Catalog: "كتالوجنا",
+	Our_Catalog_Desc:
+		"اكتشف المزيد عن شركتنا ومنتجاتنا من خلال كتالوجنا عبر الإنترنت",
+	Aluminum_Systems: "أنظمة الألومنيوم",
 };
