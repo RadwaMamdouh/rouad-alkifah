@@ -138,10 +138,6 @@ const OurProducts = () => {
 		);
 	};
 
-	const thumbnailTemplate = (item) => {
-		return <img src={item.imgSrc} alt="" style={{ display: "block" }} />;
-	};
-
 	const [showProducts, setShowProducts] = useState(false);
 
 	return (
@@ -240,7 +236,6 @@ const OurProducts = () => {
 											showItemNavigators
 											showThumbnails={false}
 											item={itemTemplate}
-											thumbnail={thumbnailTemplate}
 										/>
 
 										<div className="row px-2 mb-4">

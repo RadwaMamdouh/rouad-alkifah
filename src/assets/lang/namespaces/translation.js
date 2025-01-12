@@ -41,6 +41,9 @@ export const en = {
 	Our_Catalog_Desc:
 		"Explore more about our company and products through our online catalog",
 	Aluminum_Systems: "Aluminum Systems",
+	Our_Projects_Desc:
+		"Take a look at our exciting projects and see how we bring ideas to life.",
+	Load_More: "Load More",
 };
 
 export const ar = {
@@ -85,4 +88,7 @@ export const ar = {
 	Our_Catalog_Desc:
 		"اكتشف المزيد عن شركتنا ومنتجاتنا من خلال كتالوجنا عبر الإنترنت",
 	Aluminum_Systems: "أنظمة الألومنيوم",
+	Our_Projects_Desc:
+		"قم بإلقاء نظرة على مشاريعنا المثيرة وشاهد كيف نحول الأفكار إلى واقع.",
+	Load_More: "تحميل المزيد",
 };

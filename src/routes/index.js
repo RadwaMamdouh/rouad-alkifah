@@ -9,6 +9,7 @@ import {
 	ContactUs,
 	Home,
 	OurProducts,
+	OurProjects,
 } from "pages";
 
 const AppRouter = () => {
@@ -45,6 +46,10 @@ const AppRouter = () => {
 					{
 						path: "/catalog",
 						element: <Catalog />,
+					},
+					{
+						path: "/projects",
+						element: <OurProjects />,
 					},
 				],
 			},
