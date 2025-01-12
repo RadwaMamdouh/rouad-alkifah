@@ -18,7 +18,12 @@ const Catalog = () => {
 						<p className="fs_20 fw_500 text mbe_32">
 							{Tr.tr("translation:Our_Catalog_Desc")}
 						</p>
-						<PrimaryBtn btn type="button" label="View Our Catalog" />
+						<PrimaryBtn
+							btn
+							type="button"
+							label="View Our Catalog"
+							classes={styles.view_catalog}
+						/>
 					</div>
 				</div>
 				<div className={`col-lg-7 px-0 ${styles.img_side}`}>
