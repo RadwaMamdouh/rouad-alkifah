@@ -30,32 +30,32 @@ const ResponsiveHeader = ({ scrolled }) => {
 	// Products
 	const products = [
 		{
-			name: "Doors",
+			name: Tr.tr("translation:Doors"),
 			items: [
-				{ id: 1, label: "Bathroom doors" },
-				{ id: 2, label: "Entrance doors" },
+				{ id: 1, label: Tr.tr("translation:Bathroom_Doors") },
+				{ id: 2, label: Tr.tr("translation:Entrance_Doors") },
 			],
 		},
 		{
-			name: "Windows",
+			name: Tr.tr("translation:Windows"),
 			items: [
-				{ id: 3, label: "Fixed Windows" },
-				{ id: 4, label: "Sliding Windows" },
-				{ id: 5, label: "Tilt Windows" },
-				{ id: 6, label: "Tilt and turn windows" },
+				{ id: 3, label: Tr.tr("translation:Fixed_Windows") },
+				{ id: 4, label: Tr.tr("translation:Sliding_Windows") },
+				{ id: 5, label: Tr.tr("translation:Tilt_Windows") },
+				{ id: 6, label: Tr.tr("translation:Tilt_And_Turn_Windows") },
 			],
 		},
 		{
-			name: "Building facades",
+			name: Tr.tr("translation:Building_Facades"),
 			items: [
-				{ id: 7, label: "Structure system" },
-				{ id: 8, label: "Curtain wall system" },
-				{ id: 9, label: "Cladding system" },
+				{ id: 7, label: Tr.tr("translation:Structure_System") },
+				{ id: 8, label: Tr.tr("translation:Curtain_Wall_System") },
+				{ id: 9, label: Tr.tr("translation:Cladding_System") },
 			],
 		},
 		{
 			id: 10,
-			label: "Domes",
+			label: Tr.tr("translation:Domes"),
 		},
 	];
 
@@ -121,7 +121,7 @@ const ResponsiveHeader = ({ scrolled }) => {
 				</li>
 				<li>
 					<Accordion>
-						<AccordionTab header="Products">
+						<AccordionTab header={Tr.tr("translation:Products")}>
 							<Accordion multiple>
 								{products?.map((product, index) => {
 									return (

@@ -11,6 +11,8 @@ export const en = {
 	About_Us: "About Us",
 	Contact_Us: "Contact Us",
 	Our_Products: "Our Products",
+	Our_Products_desc:
+		"High-quality aluminum products for diverse industrial needs, ensuring durability and performance.",
 	Work_Hours: "Work Hours",
 	Follow_Us: "Follow us",
 	Accessories: "Accessories",
@@ -46,6 +48,15 @@ export const en = {
 	Our_Projects_Desc:
 		"Take a look at our exciting projects and see how we bring ideas to life.",
 	Load_More: "Load More",
+	Bathroom_Doors: "Bathroom doors",
+	Entrance_Doors: "Entrance doors",
+	Fixed_Windows: "Fixed Windows",
+	Sliding_Windows: "Sliding Windows",
+	Tilt_Windows: "Tilt Windows",
+	Tilt_And_Turn_Windows: "Tilt and turn windows",
+	Structure_System: "Structure system",
+	Curtain_Wall_System: "Curtain wall system",
+	Cladding_System: "Cladding system",
 };
 
 export const ar = {
@@ -61,6 +72,8 @@ export const ar = {
 	About_Us: "من نحن",
 	Contact_Us: "تواصل معنا",
 	Our_Products: "منتجاتنا",
+	Our_Products_desc:
+		"منتجات الألمنيوم عالية الجودة لتلبية الاحتياجات الصناعية المتنوعة، وضمان المتانة والأداء.",
 	Work_Hours: "ساعات العمل",
 	Follow_Us: "تابعنا",
 	Accessories: "الاكسسوارات",
@@ -95,4 +108,13 @@ export const ar = {
 	Our_Projects_Desc:
 		"قم بإلقاء نظرة على مشاريعنا المثيرة وشاهد كيف نحول الأفكار إلى واقع.",
 	Load_More: "تحميل المزيد",
+	Bathroom_Doors: "أبواب الحمامات",
+	Entrance_Doors: "أبواب المدخل",
+	Fixed_Windows: "إصلاح النوافذ",
+	Sliding_Windows: "النوافذ المنزلقة",
+	Tilt_Windows: "نوافذ الإمالة",
+	Tilt_And_Turn_Windows: "إمالة النوافذ وتدويرها",
+	Structure_System: "نظام الهيكل",
+	Curtain_Wall_System: "نظام الحائط الساتر",
+	Cladding_System: "نظام الكسوة",
 };

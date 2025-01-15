@@ -5,6 +5,8 @@ import PrimaryBtn from "components/PrimaryBtn/PrimaryBtn";
 import { Button } from "primereact/button";
 import { close } from "icons";
 
+import { Tr } from "utils/i18n";
+
 // Styles
 import styles from "./OurProducts.module.scss";
 
@@ -12,35 +14,35 @@ const OurProducts = () => {
 	// Products
 	const products = [
 		{
-			label: "Doors",
+			label: Tr.tr("translation:Doors"),
 			items: [
 				{
 					id: 1,
-					label: "Bathroom doors",
+					label: Tr.tr("translation:Bathroom_Doors"),
 				},
-				{ id: 2, label: "Entrance doors" },
+				{ id: 2, label: Tr.tr("translation:Entrance_Doors") },
 			],
 		},
 		{
-			label: "Windows",
+			label: Tr.tr("translation:Windows"),
 			items: [
-				{ id: 3, label: "Fixed Windows" },
-				{ id: 4, label: "Sliding Windows" },
-				{ id: 5, label: "Tilt Windows" },
-				{ id: 6, label: "Tilt and turn windows" },
+				{ id: 3, label: Tr.tr("translation:Fixed_Windows") },
+				{ id: 4, label: Tr.tr("translation:Sliding_Windows") },
+				{ id: 5, label: Tr.tr("translation:Tilt_Windows") },
+				{ id: 6, label: Tr.tr("translation:Tilt_And_Turn_Windows") },
 			],
 		},
 		{
-			label: "Building facades",
+			label: Tr.tr("translation:Building_Facades"),
 			items: [
-				{ id: 7, label: "Structure system" },
-				{ id: 8, label: "Curtain wall system" },
-				{ id: 9, label: "Cladding system" },
+				{ id: 7, label: Tr.tr("translation:Structure_System") },
+				{ id: 8, label: Tr.tr("translation:Curtain_Wall_System") },
+				{ id: 9, label: Tr.tr("translation:Cladding_System") },
 			],
 		},
 		{
-			label: "Domes",
-			items: [{ id: 10, label: "Domes" }],
+			label: Tr.tr("translation:Domes"),
+			items: [{ id: 10, label: Tr.tr("translation:Domes") }],
 		},
 	];
 
@@ -146,13 +148,12 @@ const OurProducts = () => {
 				<div className={styles.our_products_head}>
 					<div className="container">
 						<h1 className="fs_48 fw_800 white text-center mbe_8 lineH_72">
-							Our Products
+							{Tr.tr("translation:Our_Products")}
 						</h1>
 						<div className="hr_red mbe_8 mx-auto"></div>
 						<p
 							className={`fs_24 fw_500 white text-center mx-auto ${styles.maxWidth}`}>
-							High-quality aluminum products for diverse industrial needs,
-							ensuring durability and performance.
+							{Tr.tr("translation:Our_Products_desc")}
 						</p>
 					</div>
 				</div>
@@ -162,7 +163,9 @@ const OurProducts = () => {
 						<div className="row">
 							<div className="col-lg-3 mb-3 mb-lg-0">
 								<div className={`${styles.products_sidebar} d-none d-lg-block`}>
-									<h3 className={styles.products_title}>Products</h3>
+									<h3 className={styles.products_title}>
+										{Tr.tr("translation:Products")}
+									</h3>
 									<div className={styles.products_list}>
 										{products.map((product, index) => (
 											<div className={styles.product_box} key={index}>

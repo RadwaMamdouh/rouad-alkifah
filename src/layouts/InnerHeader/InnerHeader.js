@@ -26,35 +26,35 @@ const InnerHeader = () => {
 
 	const items = [
 		{
-			label: "Doors",
+			label: Tr.tr("translation:Doors"),
 			items: [
 				{
 					id: 1,
-					label: "Bathroom doors",
+					label: Tr.tr("translation:Bathroom_Doors"),
 				},
-				{ id: 2, label: "Entrance doors" },
+				{ id: 2, label: Tr.tr("translation:Entrance_Doors") },
 			],
 		},
 		{
-			label: "Windows",
+			label: Tr.tr("translation:Windows"),
 			items: [
-				{ id: 3, label: "Fixed Windows" },
-				{ id: 4, label: "Sliding Windows" },
-				{ id: 5, label: "Tilt Windows" },
-				{ id: 6, label: "Tilt and turn windows" },
+				{ id: 3, label: Tr.tr("translation:Fixed_Windows") },
+				{ id: 4, label: Tr.tr("translation:Sliding_Windows") },
+				{ id: 5, label: Tr.tr("translation:Tilt_Windows") },
+				{ id: 6, label: Tr.tr("translation:Tilt_And_Turn_Windows") },
 			],
 		},
 		{
-			label: "Building facades",
+			label: Tr.tr("translation:Building_Facades"),
 			items: [
-				{ id: 7, label: "Structure system" },
-				{ id: 8, label: "Curtain wall system" },
-				{ id: 9, label: "Cladding system" },
+				{ id: 7, label: Tr.tr("translation:Structure_System") },
+				{ id: 8, label: Tr.tr("translation:Curtain_Wall_System") },
+				{ id: 9, label: Tr.tr("translation:Cladding_System") },
 			],
 		},
 		{
-			label: "Domes",
-			items: [{ id: 10, label: "Domes" }],
+			label: Tr.tr("translation:Domes"),
+			items: [{ id: 10, label: Tr.tr("translation:Domes") }],
 		},
 	];
 
@@ -111,7 +111,7 @@ const InnerHeader = () => {
 								<li className="position-relative">
 									<Button
 										type="button"
-										label="Products"
+										label={Tr.tr("translation:Products")}
 										icon="pi pi-angle-down"
 										className={`${styles.menu_item} ${styles.menu_btn} ${
 											window.location.pathname.includes("/products")
