@@ -159,8 +159,8 @@ const InnerHeader = () => {
 									</NavLink>
 								</li>
 								<li>
-									<NavLink to="/maintenance" className={styles.menu_item}>
-										{Tr.tr("translation:Maintenance")}
+									<NavLink to="/aluminum-profiles" className={styles.menu_item}>
+										{Tr.tr("translation:Aluminum_Profiles")}
 									</NavLink>
 								</li>
 								<li>

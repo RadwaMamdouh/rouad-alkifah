@@ -5,6 +5,7 @@ import MainLayout from "layouts/MainLayout/MainLayout";
 import {
 	AboutUs,
 	Accessories,
+	AluminumProfiles,
 	Catalog,
 	ContactUs,
 	Home,
@@ -50,6 +51,10 @@ const AppRouter = () => {
 					{
 						path: "/projects",
 						element: <OurProjects />,
+					},
+					{
+						path: "/aluminum-profiles",
+						element: <AluminumProfiles />,
 					},
 				],
 			},

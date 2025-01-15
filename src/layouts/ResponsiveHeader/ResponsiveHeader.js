@@ -182,10 +182,10 @@ const ResponsiveHeader = ({ scrolled }) => {
 				</li>
 				<li>
 					<NavLink
-						to="/maintenance"
+						to="/aluminum-profiles"
 						className={styles.menu_item}
 						onClick={closeMenuOnNavigate}>
-						{Tr.tr("translation:Maintenance")}
+						{Tr.tr("translation:Aluminum_Profiles")}
 					</NavLink>
 				</li>
 				<li>

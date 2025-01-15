@@ -1,0 +1,54 @@
+@use "assets/scss/vars.scss" as *;
+
+.aluminum_profiles {
+	&_head {
+		padding: 56px 0;
+		background-image: url(~/public/img/aluminum-profiles-bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center right;
+
+		@media (max-width: 575.98px) {
+			padding: 40px 0;
+		}
+
+		.maxWidth {
+			max-width: 55%;
+
+			@media (max-width: 767.98px) {
+				max-width: 100%;
+			}
+		}
+	}
+
+	&_body {
+		padding: 32px 0 80px;
+
+		.item_Card {
+			border: 1px solid var(--light-gray);
+			height: 468px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+
+			@media (max-width: 767.98px) {
+				height: 290px;
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+				@include transition(0.3s);
+			}
+
+			&:hover {
+				img {
+					@include transform(scale(1.02));
+				}
+			}
+		}
+	}
+}

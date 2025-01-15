@@ -3,7 +3,9 @@ export const en = {
 	Home: "Home",
 	Products: "Products",
 	Projects: "Projects",
-	Maintenance: "Maintenance",
+	Aluminum_Profiles: "Aluminum profiles",
+	Aluminum_Profiles_Desc:
+		"Explore our innovative range of aluminum profiles and see how we bring precision and quality to every detail.",
 	News: "News",
 	Blogs: "Blogs",
 	About_Us: "About Us",
@@ -51,7 +53,9 @@ export const ar = {
 	Home: "الرئيسية",
 	Products: "المنتجات",
 	Projects: "المشاريع",
-	Maintenance: "الصيانة",
+	Aluminum_Profiles: "مقاطع الألمنيوم",
+	Aluminum_Profiles_Desc:
+		"اكتشف مجموعتنا المبتكرة من مقاطع الألومنيوم وشاهد كيف نقدم الدقة والجودة لكل التفاصيل.",
 	News: "الأخبار",
 	Blogs: "المدونات",
 	About_Us: "من نحن",

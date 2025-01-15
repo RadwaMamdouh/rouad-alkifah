@@ -58,7 +58,9 @@ const Footer = () => {
 											<Link to="#">{Tr.tr("translation:Projects")}</Link>
 										</li>
 										<li>
-											<Link to="#">{Tr.tr("translation:Maintenance")}</Link>
+											<Link to="#">
+												{Tr.tr("translation:Aluminum_Profiles")}
+											</Link>
 										</li>
 										<li>
 											<Link to="#">{Tr.tr("translation:News")}</Link>
