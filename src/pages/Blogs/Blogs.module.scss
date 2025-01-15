@@ -1,0 +1,79 @@
+@use "assets/scss/vars.scss" as *;
+
+.blogs {
+	&_head {
+		padding: 56px 0;
+		background-image: url(~/public/img/blogs-bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+
+		@media (max-width: 575.98px) {
+			padding: 40px 0;
+		}
+	}
+
+	&_list {
+		padding: 24px 0 78px;
+
+		@media (max-width: 575.98px) {
+			padding: 16px 0 41px;
+		}
+
+		.blogs_card {
+			display: block;
+			@include borderRadius(4px);
+			overflow: hidden;
+
+			.img {
+				height: 266px;
+				@include borderRadius(4px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				img {
+					width: 100%;
+					height: 100%;
+					-o-object-fit: cover;
+					object-fit: cover;
+					@include transition(0.3s);
+				}
+			}
+
+			&_body {
+				padding: 16px 0;
+
+				.title {
+					@include font(18px, 700, var(--black));
+					line-height: 27px;
+					margin-bottom: 16px;
+					@include transition(0.3s);
+				}
+
+				.desc {
+					@include font(16px, 500, var(--text-sub));
+					line-height: 24px;
+					display: -webkit-box;
+					-webkit-line-clamp: 4;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+				}
+			}
+
+			&:hover {
+				.img {
+					img {
+						@include transform(scale(1.02));
+					}
+				}
+
+				.blogs_card_body {
+					.title {
+						color: var(--primary);
+					}
+				}
+			}
+		}
+	}
+}

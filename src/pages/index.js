@@ -6,3 +6,7 @@ export { OurProducts } from "./OurProducts";
 export { Catalog } from "./Catalog";
 export { OurProjects } from "./OurProjects";
 export { AluminumProfiles } from "./AluminumProfiles";
+export { News } from "./News";
+export { NewsDetails } from "./NewsDetails";
+export { Blogs } from "./Blogs";
+export { BlogsDetails } from "./BlogsDetails";

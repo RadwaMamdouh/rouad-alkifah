@@ -6,7 +6,7 @@
 		background-image: url(~/public/img/aluminum-profiles-bg.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		background-position: center right;
+		background-position: center center;
 
 		@media (max-width: 575.98px) {
 			padding: 40px 0;
@@ -23,6 +23,10 @@
 
 	&_body {
 		padding: 32px 0 80px;
+
+		@media (max-width: 575.98px) {
+			padding: 32px 0 54px;
+		}
 
 		.item_Card {
 			border: 1px solid var(--light-gray);

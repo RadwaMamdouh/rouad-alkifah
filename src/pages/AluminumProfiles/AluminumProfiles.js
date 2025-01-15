@@ -106,7 +106,7 @@ const AluminumProfiles = () => {
 						btn
 						type="button"
 						label={Tr.tr("translation:Load_More")}
-						classes="mx-auto md_w"
+						classes="mx-auto md_w-100"
 					/>
 				</div>
 			</section>

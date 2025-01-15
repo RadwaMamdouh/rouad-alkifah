@@ -1,0 +1,56 @@
+@use "assets/scss/vars.scss" as *;
+
+.bread_crumb {
+	padding: 4px 0;
+	background-color: var(--primary2);
+
+	:global {
+		.p-breadcrumb {
+			padding: 0;
+			background-color: transparent;
+			border: 0;
+
+			&-list {
+				padding: 0;
+				margin: 0;
+				background-color: transparent;
+
+				.p-menuitem {
+					padding: 8px;
+					@include font(14px, 400, #677076);
+					white-space: nowrap;
+
+					a {
+						@include font(14px, 400, #677076);
+					}
+
+					&:not(:last-child) {
+						color: var(--text);
+
+						a {
+							color: var(--text);
+						}
+					}
+
+					&-separator {
+						margin: 0 5px;
+						@include transition(0.3s);
+
+						#{$rtl} & {
+							@include transform(rotate(180deg));
+						}
+
+						svg {
+							width: 13px;
+							height: 13px;
+
+							path {
+								fill: var(--primary);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

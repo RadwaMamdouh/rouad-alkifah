@@ -1,0 +1,75 @@
+@use "assets/scss/vars.scss" as *;
+
+.news {
+	&_head {
+		padding: 56px 0;
+		background-image: url(~/public/img/news-bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+
+		@media (max-width: 575.98px) {
+			padding: 40px 0;
+		}
+	}
+
+	&_list {
+		padding: 24px 0 77px;
+
+		@media (max-width: 575.98px) {
+			padding: 40px 0 56px;
+		}
+
+		.news_card {
+			display: block;
+			border: 1px solid var(--light-gray);
+			@include borderRadius(4px);
+			overflow: hidden;
+
+			.img {
+				height: 199px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				img {
+					width: 100%;
+					height: 100%;
+					-o-object-fit: cover;
+					object-fit: cover;
+					@include transition(0.3s);
+				}
+			}
+
+			&_body {
+				padding: 16px;
+
+				.date {
+					@include font(12px, 400, var(--text));
+					margin-bottom: 8px;
+					line-height: 18px;
+				}
+
+				.title {
+					@include font(18px, 700, var(--text));
+					line-height: 27px;
+					@include transition(0.3s);
+				}
+			}
+
+			&:hover {
+				.img {
+					img {
+						@include transform(scale(1.02));
+					}
+				}
+
+				.news_card_body {
+					.title {
+						color: var(--primary);
+					}
+				}
+			}
+		}
+	}
+}

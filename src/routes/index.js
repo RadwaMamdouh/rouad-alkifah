@@ -6,9 +6,13 @@ import {
 	AboutUs,
 	Accessories,
 	AluminumProfiles,
+	Blogs,
+	BlogsDetails,
 	Catalog,
 	ContactUs,
 	Home,
+	News,
+	NewsDetails,
 	OurProducts,
 	OurProjects,
 } from "pages";
@@ -55,6 +59,22 @@ const AppRouter = () => {
 					{
 						path: "/aluminum-profiles",
 						element: <AluminumProfiles />,
+					},
+					{
+						path: "/news",
+						element: <News />,
+					},
+					{
+						path: "/news/:id",
+						element: <NewsDetails />,
+					},
+					{
+						path: "/blogs",
+						element: <Blogs />,
+					},
+					{
+						path: "/blogs/:id",
+						element: <BlogsDetails />,
 					},
 				],
 			},
