@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-// Styles
-import styles from "./GoogleMapBox.module.scss";
-
 // Define the map container styles
 const containerStyle = {
 	width: "100%",
