@@ -17,7 +17,7 @@ const center = {
 };
 
 const GoogleMapBox = () => {
-	const [map, setMap] = useState(null);
+	const [, setMap] = useState(null);
 
 	const onLoad = (mapInstance) => {
 		setMap(mapInstance);
